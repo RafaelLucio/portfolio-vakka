@@ -1,0 +1,48 @@
+::-moz-selection {
+	background: $blueLight;
+	text-shadow: none;
+}
+
+::selection {
+	background: $blueLight;
+	text-shadow: none;
+}
+
+::-webkit-scrollbar {
+	width: $scroll-width;
+	height: $scroll-height;
+}
+
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment { 
+	display: none;
+}
+
+::-webkit-scrollbar-track-piece { 
+	background-color: $scrollbar-track-piece;
+	box-shadow: inset 1px 1px 0 rgba(0,0,0,.1),inset -1px -1px 0 rgba(0,0,0,.07);
+}
+
+::-webkit-scrollbar-thumb:vertical { 
+	background-color: $scrollbar-thumb-vertical;
+}
+
+::-webkit-scrollbar-thumb:horizontal { 
+	background-color: $scrollbar-thumb-horizontal;
+}
+
+*, *:before, *:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html, body{
+	width: 100%;
+	height: auto;
+	margin: 0;
+	padding: 0;
+	font-family: $font-family-base;
+	font-size: $font-size-base;
+	color: $black;
+}
