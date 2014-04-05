@@ -3,15 +3,21 @@
 // -----------------------------------
 
 .main{
-	width: $screen-lg;
+	width: 90%;
 	margin: 0 auto;
 }
 
 .content{
-	
 }
 
 .content-step{
+	display: block;
 	max-width: 100%;
-	max-height: 100%;
+	margin: 50px auto;
+}
+
+.content-step-img{
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
 }
