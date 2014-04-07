@@ -3,6 +3,7 @@
 
 /* Compass CSS3 */
 @import "compass/css3";
+@import "compass/css3/font-face";
 
 /* Fonts */
 @import "fonts/fontface";
@@ -11,8 +12,8 @@
 @import "base/variables";
 @import "base/base";
 
-/* Vendors */
-
+/* Animations */
+@import "animations/animations";
 
 /* Components */
 
@@ -20,4 +21,4 @@
 /* Layouts */
 @import "layouts/home";
 @import "layouts/about";
-@import "layouts/media-queries";
+@import "layouts/breackpoints";

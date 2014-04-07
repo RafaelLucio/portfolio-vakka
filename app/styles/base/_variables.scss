@@ -9,8 +9,8 @@
 $scroll-width: 8px;
 $scroll-height: 10px;
 $scrollbar-track-piece: rgba(255,255,255, 0.8);
-$scrollbar-thumb-vertical: rgba(124,142,161, 1);
-$scrollbar-thumb-horizontal: rgba(124,142,161, 1);
+$scrollbar-thumb-vertical: rgba(70,5,80, 1);
+$scrollbar-thumb-horizontal: rgba(70,5,80, 1);
 
 //== Colors
 //
@@ -57,7 +57,7 @@ $purple:                #7a43b6 !default;
 // ## Settings for some of the most global styles.
 
 //** Background color for `<body>`.
-$body-bg:               #fff !default;
+$body-bg:               #ccc !default;
 //** Global text color on `<body>`.
 $text-color:            $gray-dark !default;
 

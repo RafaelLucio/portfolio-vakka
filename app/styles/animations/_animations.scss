@@ -1,0 +1,9 @@
+// 
+// Animations
+// -----------------------------------
+
+.figure-content{
+	&.logo{
+		@include transition-duration(.3s);
+	}
+}

@@ -2,12 +2,105 @@
 // Home 
 // -----------------------------------
 
-.main{
-	width: 90%;
+.home{
+	width: 80%;
+	height: 100%;
 	margin: 0 auto;
+	z-index: 2;
+	position: relative;
 }
 
-.content{
+.fig-home{
+	position: absolute;
+}
+
+.vakka{
+	left: 50%;
+	margin-left: -285px;
+	bottom: 150px;
+}
+
+.grama{
+	bottom: 80px;
+}
+
+.placa{
+	right: 35px;
+	bottom: 195px;
+}
+
+.home-text{
+	left: 50%;
+	bottom: 60px;
+	margin-left: -180px;
+	.text{
+		color: $gray;
+		text-align: center;
+		font-size: $font-size-h3;
+		strong{
+			color: rgb(43, 3, 49);
+			font-size: $font-size-h2;
+			font-family: $font-family-amatic_bold;
+		}
+	}
+}
+
+
+.arrow-bottom{
+	left: 50%;
+	width: 30px;
+	height: 30px;
+	bottom: 30px;
+	display: block;
+	cursor: pointer;
+	margin-left: -15px;
+	background: transparent;
+	border: 1px solid transparent;
+	border-top-color: #ccc;
+	border-right-color: #ccc;
+	@include transform(rotate(135deg));
+}
+
+.overlay{
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: absolute;
+	background-color: rgba(255,255,255,.8);
+}
+
+.figure-content{
+	top: 0;
+	left: 0;
+	width: 100%;
+	position: fixed;
+	&.bg{
+		top: 150px;
+	}
+	&.logo{
+		top: 30%;
+		z-index: 1;
+		margin-top: -170px;
+		&.active{
+			top: 55px;
+			@include transform(scale(.3));
+		}
+	}
+}
+
+.jobs{
+	top: 0;
+	width: 90%;
+	margin: 0 auto;
+	position: relative;
+}
+
+.content.pepsi{
+	.content-step:first-child{
+		margin-top: 100px;
+	}
 }
 
 .content-step{

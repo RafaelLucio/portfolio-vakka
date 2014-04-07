@@ -1,10 +1,10 @@
 ::-moz-selection {
-	background: $blueLight;
+	background: rgb(43, 3, 49);
 	text-shadow: none;
 }
 
 ::selection {
-	background: $blueLight;
+	background: rgb(43, 3, 49);
 	text-shadow: none;
 }
 
@@ -39,10 +39,11 @@
 
 html, body{
 	width: 100%;
-	height: auto;
+	height: 100%;
 	margin: 0;
 	padding: 0;
 	font-family: $font-family-base;
 	font-size: $font-size-base;
 	color: $black;
+	background-color: $body-bg;
 }
