@@ -10,65 +10,133 @@
 	position: relative;
 }
 
-.fig-home{
+.content-moscas{
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 	position: absolute;
 }
 
-.vakka{
+.mosca{
+	bottom: 0;
 	left: 50%;
-	margin-left: -285px;
-	bottom: 150px;
-}
-
-.grama{
-	bottom: 80px;
-}
-
-.placa{
-	right: 35px;
-	bottom: 195px;
-}
-
-.home-text{
-	left: 50%;
-	bottom: 60px;
-	margin-left: -180px;
-	.text{
-		color: $gray;
-		text-align: center;
-		font-size: $font-size-h3;
-		strong{
-			color: rgb(43, 3, 49);
-			font-size: $font-size-h2;
-			font-family: $font-family-amatic_bold;
-		}
+	width: 19px;
+	height: 18px;
+	position: absolute;
+	background: transparent image-url('mosca-right.png') 0 0 no-repeat;
+	&.m1{
+		bottom: 300px;
+		margin-left: -300px;
+	}
+	&.m2{
+		bottom: 475px;
+		margin-left: -220px;
+	}
+	&.m3{
+		bottom: 440px;
+		margin-left: -180px;
+	}
+	&.m4{
+		bottom: 370px;
+		margin-left: 170px;
+	}
+	&.m5{
+		bottom: 360px;
+		margin-left: 240px;
+	}
+	&.m6{
+		bottom: 320px;
+		margin-left: 200px;
+		@include transform(rotate(45deg));
 	}
 }
 
+.fig-home{
+	top: 50%;
+	left: 50%;
+	position: absolute;
+}
+
+.luz{
+	top: -100px;
+	height: 0;
+	opacity: 0;
+	margin-left: -447px;
+	&.active{
+		height: auto;
+		opacity: 0.8;
+	}
+}
+
+.vakka{
+	margin-top: -150px;
+	margin-left: -260px;
+	&.active{
+		@include transform(rotate(-10deg));
+	}
+}
+
+.error-404{
+	.vakka{
+		margin-left: -390px;
+	}
+}
+
+.grama{
+	margin-top: 85px;
+	margin-left: -480px;
+	&.active{
+		@include transform(rotate(5deg));
+	}
+}
+
+.placa{
+	margin-top: -40px;
+	margin-left: 283px;
+	&.active{
+		@include transform(rotate(30deg));
+	}
+}
+
+.home-text{
+	margin-top: 230px;
+	margin-left: -222px;
+	.text{
+		color: $gray;
+		text-align: center;
+		font-size: $font-size-h2;
+		strong{
+			color: rgb(43, 3, 49);
+			font-size: $font-size-h1;
+			font-family: $font-family-amatic_bold;
+		}
+	}
+	&.active{
+		@include transform(rotate(-5deg));
+	}
+}
 
 .arrow-bottom{
+	top: 90%;
 	left: 50%;
 	width: 30px;
 	height: 30px;
-	bottom: 30px;
 	display: block;
 	cursor: pointer;
 	margin-left: -15px;
 	background: transparent;
 	border: 1px solid transparent;
-	border-top-color: #ccc;
-	border-right-color: #ccc;
+	border-top-color: #666;
+	border-right-color: #666;
 	@include transform(rotate(135deg));
+	&.active{
+		@include transform(rotate(120deg));
+	}
 }
 
-.overlay{
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	display: block;
-	position: absolute;
-	background-color: rgba(255,255,255,.8);
+.vakka.active, .grama.active, .placa.active, .home-text.active{
+	-webkit-filter: blur(2px);
 }
 
 .figure-content{

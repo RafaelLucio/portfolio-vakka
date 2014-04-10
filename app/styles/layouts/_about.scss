@@ -1,0 +1,32 @@
+// 
+// Home 
+// -----------------------------------
+
+.about{
+	@extend .home;
+	font-size: $font-size-h3;
+}
+
+.about-header{}
+
+.about-header-title{
+	font-style: italic;
+	font-size: $font-size-h4;
+	letter-spacing: 2px;
+}
+
+.about-article{}
+
+.about-article-content{}
+
+.about-article-item{}
+
+.about-article-item-line{}
+
+.about-article-item-email{}
+
+.about-article-item-link{}
+
+.about-article-item-title{}
+
+.about-article-item-group{}

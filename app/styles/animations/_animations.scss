@@ -2,8 +2,16 @@
 // Animations
 // -----------------------------------
 
+.luz{
+	@include transition-duration(.5s);
+}
+
+.vakka, .grama, .placa, .home-text, .arrow-bottom{
+	@include transition-duration(1s);
+}
+
 .figure-content{
 	&.logo{
-		@include transition-duration(.3s);
+		@include transition-duration(.5s);
 	}
 }

@@ -7,7 +7,7 @@
 		<meta charset="utf-8">
 		<title>Portfolio vakka</title>
 		<meta name="description" content="">
-		<meta name="viewport" content="width=device-width">
+		<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0" />
 		<link rel="shortcut icon" href="/favicon.ico">
 		<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 		<!-- build:css styles/vendor.css -->
@@ -33,19 +33,30 @@
 			<img class="content-step-img" src="images/logo.png" alt="">
 		</figure>
 		<section class="home">
-			<figure class="fig-home vakka">
+			<figure class="fig-home vakka" data-stellar-ratio="1.1">
 				<img class="content-step-img" src="images/vakka.png" alt="">
 			</figure>
-			<figure class="fig-home grama">
+			<div class="content-moscas">
+				<div class="mosca m1" data-stellar-ratio="1.5"></div>
+				<div class="mosca m2" data-stellar-ratio="1.0"></div>
+				<div class="mosca m3" data-stellar-ratio="1.2"></div>
+				<div class="mosca m4" data-stellar-ratio="1.6"></div>
+				<div class="mosca m5" data-stellar-ratio="1.7"></div>
+				<div class="mosca m6" data-stellar-ratio="1.8"></div>
+			</div>
+			<figure class="fig-home grama" data-stellar-ratio="1.1">
 				<img class="content-step-img" src="images/grama.png" alt="">
 			</figure>
-			<figure class="fig-home placa">
+			<figure class="fig-home placa" data-stellar-ratio="1.4">
 				<img class="content-step-img" src="images/placa.png" alt="">
 			</figure>
 			<div class="fig-home home-text">
 				<p class="text">A BRAZILIAN <strong>INTERFACE DESIGNER</strong> AND <strong>ART DIRECTOR</strong></p>
 			</div>
 			<span class="fig-home arrow-bottom"></span>
+			<figure class="fig-home luz">
+				<img class="content-step-img" src="images/luz.png" alt="">
+			</figure>
 		</section>
 		<section class="jobs">
 			<article class="content pepsi">
@@ -104,10 +115,49 @@
 				</figure>
 			</article>
 		</section>
+		<section class="overlay overlay-bottom"></section>
+		<section class="about">
+			<header class="about-header">
+				<h3 class="about-header-title">
+					Vakka (orig. vaca) means cow {zoo} in english.
+				</h3>
+			</header>
+			<article class="about-article">
+				<ul class="about-article-content">
+					<li class="about-article-item">
+						<p>Thiago Vakka is a brazillian</p>
+						<p><strong>Designer</strong> and Art Director</p>
+						<p>Focused on UI/UX Design</p>
+						<hr class="about-article-item-line">
+						<p class="about-article-item-email">
+							<a class="about-article-item-link" href="mailto:thiado.vakka@gmail.com">thiago.vakka@gmail.com</a>
+						</p>
+					</li>
+					<li class="about-article-item">
+						<h2 class="about-article-item-title">Agency <strong>Experience</strong></h2>
+						<div class="about-article-item-group">
+							<h3>Designer / Art Director @ Gauge</h3>
+							<p>July 2010 - March 2014</p>
+						</div>
+						<div class="about-article-item-group">
+							<h3>Designer / Art Director @ Tesla</h3>
+							<p>June 2010 - July 2012</p>
+						</div>
+						<div class="about-article-item-group">
+							<h3>Designer / Art Director @ Sabbre</h3>
+							<p>January 2010 - June 2010</p>
+						</div>
+					</li>
+				</ul>
+			</article>
+		</section>
 
 		<!-- build:js scripts/vendor.js -->
 		<!-- bower:js -->
 		<script src="bower_components/jquery/dist/jquery.js"></script>
+		<script src="bower_components/jquery.stellar/jquery.stellar.js"></script>
+		<script src="bower_components/jquery.mousewheel/jquery.mousewheel.js"></script>
+		<script src="bower_components/simplr-smoothscroll/lib/jquery.simplr.smoothscroll.min.js"></script>
 		<!-- endbower -->
 		<!-- endbuild -->
 
