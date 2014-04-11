@@ -19,35 +19,35 @@
 }
 
 .mosca{
-	bottom: 0;
+	top: 0;
 	left: 50%;
 	width: 19px;
 	height: 18px;
 	position: absolute;
 	background: transparent image-url('mosca-right.png') 0 0 no-repeat;
 	&.m1{
-		bottom: 300px;
-		margin-left: -300px;
+		top: 260px;
+		margin-left: -260px;
 	}
 	&.m2{
-		bottom: 475px;
-		margin-left: -220px;
+		top: 440px;
+		margin-left: -285px;
 	}
 	&.m3{
-		bottom: 440px;
-		margin-left: -180px;
+		top: 280px;
+		margin-left: -170px;
 	}
 	&.m4{
-		bottom: 370px;
-		margin-left: 170px;
+		top: 370px;
+		margin-left: 200px;
 	}
 	&.m5{
-		bottom: 360px;
-		margin-left: 240px;
+		top: 350px;
+		margin-left: 275px;
 	}
 	&.m6{
-		bottom: 320px;
-		margin-left: 200px;
+		top: 410px;
+		margin-left: 240px;
 		@include transform(rotate(45deg));
 	}
 }

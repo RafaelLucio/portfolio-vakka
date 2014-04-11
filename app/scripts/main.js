@@ -1,7 +1,9 @@
 $(function () {
+	'use strict';
+
 	var platform = navigator.platform.toLowerCase();
-	if (platform.indexOf('windows') != -1 || platform.indexOf('linux') != -1) {
-		if (navigator['webkitPersistentStorage']) {
+	if (platform.indexOf('windows') !== -1 || platform.indexOf('linux') !== -1) {
+		if (navigator.webkitPersistentStorage) {
 			$.srSmoothscroll();
 		}
 	}
@@ -13,9 +15,11 @@ $(function () {
 
 	var heightScreen = $(window).height();
 
-	var setOverlayToBottom = (function (documentHeight) {
+	var setOverlayToBottom = function (documentHeight) {
 		$('.overlay-bottom').css('top', (documentHeight - heightScreen));
-	})($(document).height());
+	};
+
+	setOverlayToBottom($(document).height());
 
 	$(window).scroll(function () {
 		if ($(this).scrollTop() > 0) {
