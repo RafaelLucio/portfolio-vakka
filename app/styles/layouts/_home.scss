@@ -19,35 +19,13 @@
 }
 
 .mosca{
-	top: 0;
+	top: 50%;
 	left: 50%;
 	width: 19px;
 	height: 18px;
 	position: absolute;
 	background: transparent image-url('mosca-right.png') 0 0 no-repeat;
-	&.m1{
-		top: 260px;
-		margin-left: -260px;
-	}
-	&.m2{
-		top: 440px;
-		margin-left: -285px;
-	}
-	&.m3{
-		top: 280px;
-		margin-left: -170px;
-	}
-	&.m4{
-		top: 370px;
-		margin-left: 200px;
-	}
-	&.m5{
-		top: 350px;
-		margin-left: 275px;
-	}
 	&.m6{
-		top: 410px;
-		margin-left: 240px;
 		@include transform(rotate(45deg));
 	}
 }
