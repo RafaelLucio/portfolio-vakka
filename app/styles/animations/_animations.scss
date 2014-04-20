@@ -7,11 +7,11 @@
 }
 
 .vakka, .grama, .placa, .home-text, .arrow-bottom{
-	@include transition-duration(1s);
+	@include transition-duration(.7s);
 }
 
 .figure-content{
 	&.logo{
-		@include transition-duration(.5s);
+		@include transition-duration(.3s);
 	}
 }

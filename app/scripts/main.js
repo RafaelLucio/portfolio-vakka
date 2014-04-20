@@ -1,25 +1,12 @@
 $(function () {
 	'use strict';
 
-	var platform = navigator.platform.toLowerCase();
-	if (platform.indexOf('windows') !== -1 || platform.indexOf('linux') !== -1) {
-		if (navigator.webkitPersistentStorage) {
-			$.srSmoothscroll();
-		}
-	}
+	var heightScreen = $(window).height();
 
 	$.stellar({
 		horizontalScrolling: false,
 		verticalOffset: 0
 	});
-
-	var heightScreen = $(window).height();
-
-	var setOverlayToBottom = function (documentHeight) {
-		$('.overlay-bottom').css('top', (documentHeight - heightScreen));
-	};
-
-	setOverlayToBottom($(document).height());
 
 	$(window).scroll(function () {
 		if ($(this).scrollTop() > 0) {
@@ -40,10 +27,10 @@ $(function () {
 			$('.home-text').removeClass('active');
 			$('.arrow-bottom').removeClass('active');
 		}
-		if ($(this).scrollTop() > (heightScreen / 2)) {
+		if ($(this).scrollTop() > heightScreen-100) {
 			$('.logo').addClass('active');
 		}
-		if ($(this).scrollTop() < ((heightScreen / 2) + (heightScreen / 3))) {
+		if ($(this).scrollTop() < heightScreen-100) {
 			$('.logo').removeClass('active');
 		}
 	});

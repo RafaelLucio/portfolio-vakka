@@ -137,6 +137,7 @@
 
 .vakka.active, .grama.active, .placa.active, .home-text.active{
 	-webkit-filter: blur(2px);
+	-moz-filter: blur(2px);
 }
 
 .figure-content{

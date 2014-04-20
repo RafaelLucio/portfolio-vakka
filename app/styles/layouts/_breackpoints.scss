@@ -1,64 +1,326 @@
+// 
+// Breackpoints
+// -----------------------------------
+
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) {
 	/* Styles */
+	.mosca{
+		&.m1{}
+		&.m2{}
+		&.m3{}
+		&.m4{}
+		&.m5{}
+		&.m6{}
+	}
+	.luz{}
+	.vakka{}
+	.grama{}
+	.placa{}
+	.home-text{}
+	.arrow-bottom{}
 	.figure-content{
 		&.logo{
-			@include transform(scale(.3));
+			&.active{
+			}
 		}
 	}
 }
-
-/* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) {
 	/* Styles */
+	.mosca{
+		&.m1{}
+		&.m2{}
+		&.m3{}
+		&.m4{}
+		&.m5{}
+		&.m6{}
+	}
+	.luz{}
+	.vakka{}
+	.grama{}
+	.placa{}
+	.home-text{}
+	.arrow-bottom{}
+	.figure-content{
+		&.logo{
+			&.active{
+			}
+		}
+	}
 }
-
 /* iPads (landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
 	/* Styles */
-}
-
-/* iPads (portrait) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
-	/* Styles */
-}
-/* iPhone 4 ----------- */
-@media
-only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
-	/* Styles */
-}
-
-/* Smartphones (portrait) ----------- */
-@media only screen and (max-width : 320px) {
-	/* Styles */
+	.mosca{
+		&.m1{}
+		&.m2{}
+		&.m3{}
+		&.m4{}
+		&.m5{}
+		&.m6{}
+	}
+	.luz{}
+	.vakka{}
+	.grama{}
+	.placa{}
+	.home-text{}
+	.arrow-bottom{}
 	.figure-content{
 		&.logo{
-			@include transform(scale(.3));
+			&.active{
+			}
 		}
 	}
 }
-
-/* Smartphones (landscape) ----------- */
-@media only screen and (min-width : 321px) and (max-width : 480px){
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
 	/* Styles */
+	.mosca{
+		&.m1{}
+		&.m2{}
+		&.m3{}
+		&.m4{}
+		&.m5{}
+		&.m6{}
+	}
+	.luz{}
+	.vakka{}
+	.grama{}
+	.placa{}
+	.home-text{}
+	.arrow-bottom{}
 	.figure-content{
 		&.logo{
-			@include transform(scale(.5));
 			&.active{
-				@include transform(scale(.3));
+			}
+		}
+	}
+}
+/* iPhone 4 ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
+	/* Styles */
+	.mosca{
+		&.m1{}
+		&.m2{}
+		&.m3{}
+		&.m4{}
+		&.m5{}
+		&.m6{}
+	}
+	.luz{}
+	.vakka{}
+	.grama{}
+	.placa{}
+	.home-text{}
+	.arrow-bottom{}
+	.figure-content{
+		&.logo{
+			&.active{
 			}
 		}
 	}
 }
 
 /* Smartphones (portrait) ----------- */
-@media only screen and (min-width : 481px) and (max-width : 768px){
+@media only screen and (max-width : 320px) {
 	/* Styles */
+	.mosca{
+		&.m1{}
+		&.m2{}
+		&.m3{}
+		&.m4{}
+		&.m5{}
+		&.m6{}
+	}
+	.luz{}
+	.vakka{}
+	.grama{}
+	.placa{}
+	.home-text{}
+	.arrow-bottom{}
 	.figure-content{
 		&.logo{
-			@include transform(scale(.7));
 			&.active{
-				@include transform(scale(.3));
+			}
+		}
+	}
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (min-width : 480px){
+	/* Styles */
+	.mosca{
+		&.m1{}
+		&.m2{}
+		&.m3{}
+		&.m4{}
+		&.m5{}
+		&.m6{}
+	}
+	.luz{}
+	.vakka{}
+	.grama{}
+	.placa{}
+	.home-text{}
+	.arrow-bottom{}
+	.figure-content{
+		&.logo{
+			&.active{
+			}
+		}
+	}
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (min-width : 600px) and (max-width : 799px){
+	/* Styles */
+	.mosca{
+		&.m1{
+			top: 240px;
+			margin-left: -230px;
+		}
+		&.m2{
+			top: 380px;
+			margin-left: -255px;
+		}
+		&.m3{
+			top: 250px;
+			margin-left: -140px;
+		}
+		&.m4{
+			top: 310px;
+			margin-left: 120px;
+		}
+		&.m5{
+			top: 290px;
+			margin-left: 200px;
+		}
+		&.m6{
+			top: 350px;
+			margin-left: 160px;
+		}
+	}
+	.luz{}
+	.vakka{}
+	.grama{}
+	.placa{}
+	.home-text{}
+	.arrow-bottom{}
+	.figure-content{
+		&.logo{
+			&.active{
+			}
+		}
+	}
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 800px) and (max-width : 1023px) {
+	/* Styles */
+	.mosca{
+		&.m1{
+			top: 240px;
+			margin-left: -230px;
+		}
+		&.m2{
+			top: 380px;
+			margin-left: -255px;
+		}
+		&.m3{
+			top: 250px;
+			margin-left: -140px;
+		}
+		&.m4{
+			top: 310px;
+			margin-left: 120px;
+		}
+		&.m5{
+			top: 290px;
+			margin-left: 200px;
+		}
+		&.m6{
+			top: 350px;
+			margin-left: 160px;
+		}
+	}
+	.luz{}
+	.vakka{
+		width: 380px;
+		margin-top: -70px;
+		margin-left: -200px;
+	}
+	.grama{
+		width: 700px;
+		margin-top: 95px;
+		margin-left: -350px;
+	}
+	.placa{
+		width: 189px;
+		margin-top: -5px;
+		margin-left: 210px;
+	}
+	.home-text{
+		margin-top: 210px;
+	}
+	.arrow-bottom{}
+	.figure-content{
+		&.logo{
+			&.active{
+			}
+		}
+	}
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1024px) {
+	/* Styles */
+	.mosca{
+		&.m1{
+			top: 230px;
+			margin-left: -320px;
+		}
+		&.m2{
+			top: 430px;
+			margin-left: -320px;
+		}
+		&.m3{
+			top: 260px;
+			margin-left: -210px;
+		}
+		&.m4{
+			top: 360px;
+			margin-left: 150px;
+		}
+		&.m5{
+			top: 340px;
+			margin-left: 230px;
+		}
+		&.m6{
+			top: 410px;
+			margin-left: 200px;
+		}
+	}
+	.luz{}
+	.vakka{
+		width: 525px;
+		margin-top: -150px;
+		margin-left: -303px;
+	}
+	.grama{
+		width: 955px;
+		margin-left: -475px;
+	}
+	.placa{
+		width: 236px;
+		margin-left: 243px;
+	}
+	.home-text{}
+	.arrow-bottom{}
+	.figure-content{
+		&.logo{
+			&.active{
 			}
 		}
 	}
@@ -67,8 +329,61 @@ only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-dev
 /* Desktops and laptops ----------- */
 @media only screen and (min-width : 1224px) {
 	/* Styles */
+	.mosca{
+		&.m1{
+			top: 420px;
+			margin-left: -260px;
+		}
+		&.m2{
+			top: 600px;
+			margin-left: -285px;
+		}
+		&.m3{
+			top: 440px;
+			margin-left: -170px;
+		}
+		&.m4{
+			top: 530px;
+			margin-left: 200px;
+		}
+		&.m5{
+			top: 490px;
+			margin-left: 275px;
+		}
+		&.m6{
+			top: 560px;
+			margin-left: 240px;
+		}
+	}
 }
+
 /* Large screens ----------- */
 @media only screen and (min-width : 1824px) {
 	/* Styles */
+	.mosca{
+		&.m1{
+			top: 510px;
+			margin-left: -260px;
+		}
+		&.m2{
+			top: 690px;
+			margin-left: -285px;
+		}
+		&.m3{
+			top: 530px;
+			margin-left: -170px;
+		}
+		&.m4{
+			top: 620px;
+			margin-left: 200px;
+		}
+		&.m5{
+			top: 600px;
+			margin-left: 275px;
+		}
+		&.m6{
+			top: 660px;
+			margin-left: 240px;
+		}
+	}
 }

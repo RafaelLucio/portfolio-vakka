@@ -2,12 +2,9 @@
   "name": "portfolio-vakka",
   "private": true,
   "dependencies": {
-    "bootstrap-sass-official": "~3.1.0",
     "modernizr": "~2.6.2",
     "jquery": "~1.11.0",
-    "jquery.stellar": "~0.6.2",
-    "simplr-smoothscroll": "git@github.com:simov/simplr-smoothscroll.git",
-    "jquery.mousewheel": "*"
+    "jquery.stellar": "~0.6.2"
   },
   "devDependencies": {}
 }
