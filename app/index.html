@@ -25,6 +25,10 @@
 		<!--[if lt IE 10]>
 			<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 		<![endif]-->
+		<aside class="navigation">
+			<a href="#home" class="navigation-link-home">Home</a>
+			<a href="#about" class="navigation-link-about">About</a>
+		</aside>
 		<figure class="figure-content bg">
 			<img class="content-step-img" src="images/background.png" alt="">
 		</figure>
@@ -32,9 +36,13 @@
 		<figure class="figure-content logo">
 			<img class="content-step-img" src="images/logo.png" alt="">
 		</figure>
-		<section class="home">
-			<figure class="fig-home vakka" data-stellar-ratio="1.1">
+		<section id="home" class="home">
+			<div class="luz-top"></div>
+			<figure class="fig-home vakka" data-stellar-ratio="2">
 				<img class="content-step-img" src="images/vakka.png" alt="">
+			</figure>
+			<figure class="fig-home luz">
+				<img class="content-step-img" src="images/luz.png" alt="">
 			</figure>
 			<div class="content-moscas">
 				<div class="mosca m1" data-stellar-ratio="1.5"></div>
@@ -54,9 +62,6 @@
 				<p class="text">A BRAZILIAN <strong>INTERFACE DESIGNER</strong> AND <strong>ART DIRECTOR</strong></p>
 			</div>
 			<span class="fig-home arrow-bottom"></span>
-			<figure class="fig-home luz">
-				<img class="content-step-img" src="images/luz.png" alt="">
-			</figure>
 		</section>
 		<section class="jobs">
 			<article class="content pepsi">
@@ -116,7 +121,7 @@
 			</article>
 		</section>
 		<section class="overlay overlay-bottom"></section>
-		<section class="about">
+		<section id="about" class="about">
 			<header class="about-header">
 				<h3 class="about-header-title">
 					Vakka (orig. vaca) means cow {zoo} in english.

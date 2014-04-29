@@ -124,20 +124,115 @@
 }
 
 /* Smartphones (portrait) ----------- */
-@media only screen and (max-width : 320px) {
+@media only screen and (max-width : 320px){
 	/* Styles */
+	.home{
+		width: 100%;
+	}
+	.vakka.active, .grama.active, .placa.active, .home-text.active{
+		@include transform(rotate(0));
+		-webkit-filter: blur(0px);
+		-moz-filter: blur(0px);
+	}
 	.mosca{
-		&.m1{}
-		&.m2{}
-		&.m3{}
-		&.m4{}
-		&.m5{}
-		&.m6{}
+		&.m4{
+			margin-top: 0px;
+			margin-left: 23px;
+		}
+		&.m5{
+			margin-left: 80px;
+			margin-top: 75px;
+		}
+		&.m6{
+			margin-top: -20px;
+			margin-left: 90px;
+		}
+	}
+	.luz{
+		display: none !important;
+	}
+	.vakka{
+		left: 0;
+		width: 100%;
+		margin-left: 0;
+		overflow: hidden;
+		.content-step-img{
+			width: 525px;
+			max-width: 525px;
+			min-width: 525px;
+			margin-top: 35px;
+			margin-left: -285px;
+		}
+	}
+	.grama{
+		left: 0;
+		width: 100%;
+		margin-left: 0;
+		overflow: hidden;
+		.content-step-img{
+			width: 955px;
+			max-width: 955px;
+			min-width: 955px;
+			margin-top: 32px;
+			margin-left: -200px;
+		}
+	}
+	.placa{
+		display: none !important;
+	}
+	.home-text{
+		display: none !important;
+		margin-top: 213px;
+		margin-left: -156px;
+	}
+	.arrow-bottom{
+		display: none !important;
+		top: 95%;
+	}
+	.figure-content{
+		&.logo{
+			@include transform(scale(.7));
+			&.active{
+			}
+		}
+	}
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (min-width : 321px) and (max-width : 480px){
+	/* Styles */
+	.home{
+		width: 100%;
+	}
+	.mosca{
+		display: none !important;
 	}
 	.luz{}
-	.vakka{}
-	.grama{}
-	.placa{}
+	.vakka{
+		left: 0;
+		margin-left: 0;
+		width: 100%;
+		overflow: hidden;
+		.content-step-img{
+			width: 525px;
+			max-width: 525px;
+			min-width: 525px;
+		}
+	}
+	.grama{
+		left: 0;
+		margin-left: 0;
+		width: 100%;
+		overflow: hidden;
+		.content-step-img{
+			width: 955px;
+			max-width: 955px;
+			min-width: 955px;
+		}
+	}
+	.placa{
+		display: none !important;
+	}
 	.home-text{}
 	.arrow-bottom{}
 	.figure-content{
@@ -149,20 +244,38 @@
 }
 
 /* Smartphones (portrait) ----------- */
-@media only screen and (min-width : 480px){
+@media only screen and (min-width : 481px) and (max-width : 600px){
 	/* Styles */
+	.home{}
 	.mosca{
-		&.m1{}
-		&.m2{}
-		&.m3{}
-		&.m4{}
-		&.m5{}
-		&.m6{}
+		display: none !important;
 	}
 	.luz{}
-	.vakka{}
-	.grama{}
-	.placa{}
+	.vakka{
+		left: 0;
+		margin-left: 0;
+		width: 100%;
+		overflow: hidden;
+		.content-step-img{
+			width: 525px;
+			max-width: 525px;
+			min-width: 525px;
+		}
+	}
+	.grama{
+		left: 0;
+		margin-left: 0;
+		width: 100%;
+		overflow: hidden;
+		.content-step-img{
+			width: 955px;
+			max-width: 955px;
+			min-width: 955px;
+		}
+	}
+	.placa{
+		display: none !important;
+	}
 	.home-text{}
 	.arrow-bottom{}
 	.figure-content{
@@ -176,34 +289,28 @@
 /* Smartphones (portrait) ----------- */
 @media only screen and (min-width : 600px) and (max-width : 799px){
 	/* Styles */
+	.home{
+		@include transform(scale(.6));
+	}
 	.mosca{
-		&.m1{
-			margin-left: -230px;
-		}
-		&.m2{
-			margin-left: -255px;
-		}
-		&.m3{
-			margin-left: -140px;
-		}
-		&.m4{
-			margin-left: 120px;
-		}
-		&.m5{
-			margin-left: 200px;
-		}
-		&.m6{
-			margin-left: 160px;
-		}
+		&.m1{}
+		&.m2{}
+		&.m3{}
+		&.m4{}
+		&.m5{}
+		&.m6{}
 	}
 	.luz{}
 	.vakka{}
-	.grama{}
+	.grama{
+		margin-top: 185px;
+	}
 	.placa{}
 	.home-text{}
 	.arrow-bottom{}
 	.figure-content{
 		&.logo{
+			@include transform(scale(.7));
 			&.active{
 			}
 		}
@@ -213,147 +320,31 @@
 /* Desktops and laptops ----------- */
 @media only screen and (min-width : 800px) and (max-width : 1023px) {
 	/* Styles */
+	.home{
+		@include transform(scale(.7));
+	}
 	.mosca{
-		&.m1{
-			margin-left: -230px;
-		}
-		&.m2{
-			margin-left: -255px;
-		}
-		&.m3{
-			margin-left: -140px;
-		}
-		&.m4{
-			margin-left: 120px;
-		}
-		&.m5{
-			margin-left: 200px;
-		}
-		&.m6{
-			margin-left: 160px;
-		}
+		&.m1{}
+		&.m2{}
+		&.m3{}
+		&.m4{}
+		&.m5{}
+		&.m6{}
 	}
 	.luz{}
-	.vakka{
-		width: 380px;
-		margin-top: -70px;
-		margin-left: -200px;
-	}
+	.vakka{}
 	.grama{
-		width: 700px;
-		margin-top: 95px;
-		margin-left: -350px;
+		margin-top: 165px;
 	}
-	.placa{
-		width: 189px;
-		margin-top: -5px;
-		margin-left: 210px;
-	}
+	.placa{}
 	.home-text{
-		margin-top: 210px;
+		margin-top: 200px;
 	}
 	.arrow-bottom{}
 	.figure-content{
 		&.logo{
 			&.active{
 			}
-		}
-	}
-}
-
-/* Desktops and laptops ----------- */
-@media only screen and (min-width : 1024px) {
-	/* Styles */
-	.mosca{
-		&.m1{
-			margin-left: -320px;
-		}
-		&.m2{
-			margin-left: -320px;
-		}
-		&.m3{
-			margin-left: -210px;
-		}
-		&.m4{
-			margin-left: 150px;
-		}
-		&.m5{
-			margin-left: 230px;
-		}
-		&.m6{
-			margin-left: 200px;
-		}
-	}
-	.luz{}
-	.vakka{
-		width: 525px;
-		margin-top: -150px;
-		margin-left: -303px;
-	}
-	.grama{
-		width: 955px;
-		margin-left: -475px;
-	}
-	.placa{
-		width: 236px;
-		margin-left: 243px;
-	}
-	.home-text{}
-	.arrow-bottom{}
-	.figure-content{
-		&.logo{
-			&.active{
-			}
-		}
-	}
-}
-
-/* Desktops and laptops ----------- */
-@media only screen and (min-width : 1224px) {
-	/* Styles */
-	.mosca{
-		&.m1{
-			margin-left: -260px;
-		}
-		&.m2{
-			margin-left: -285px;
-		}
-		&.m3{
-			margin-left: -170px;
-		}
-		&.m4{
-			margin-left: 200px;
-		}
-		&.m5{
-			margin-left: 275px;
-		}
-		&.m6{
-			margin-left: 240px;
-		}
-	}
-}
-
-/* Large screens ----------- */
-@media only screen and (min-width : 1824px) {
-	/* Styles */
-	.mosca{
-		&.m1{
-			margin-left: -260px;
-		}
-		&.m2{
-			margin-left: -285px;
-		}
-		&.m3{
-			margin-left: -170px;
-		}
-		&.m4{
-			margin-left: 200px;
-		}
-		&.m5{
-			margin-left: 275px;
-		}
-		&.m6{
-			margin-left: 240px;
 		}
 	}
 }

@@ -19,6 +19,7 @@
 }
 
 .about-header-title{
+	font-family: $font-family-josefin_slabbold_italic;
 	font-style: italic;
 	font-size: $font-size-h4;
 	letter-spacing: 2px;
@@ -51,7 +52,7 @@
 		strong{
 			color: rgb(43, 3, 49);
 			font-size: $font-size-h1*1.4;
-			font-family: $font-family-amatic_bold;
+			font-family: $font-family-amatic;
 		}
 	}
 }

@@ -1,101 +1,162 @@
-// 
-// Home 
+//
+// Home
 // -----------------------------------
 
-.home{
+.home {
 	width: 80%;
 	height: 100%;
 	margin: 0 auto;
 	z-index: 2;
 	position: relative;
 }
-
-.content-moscas{
+.navigation {
+	top: 30px;
+	z-index: 10;
+	right: -10px;
+	width: 100px;
+	height: 40px;
+	position: fixed;
+	overflow: hidden;
+	padding-top: 10px;
+	padding-left: 25px;
+	&:before {
+		content: '';
+		left: 10px;
+		top: -5px;
+		width: 19px;
+		height: 18px;
+		position: absolute;
+		background: transparent image-url('mosca-right.png') 0 0 no-repeat;
+	}
+}
+.navigation-link-home, .navigation-link-about {
+	color: #2b0331;
+	display: block;
+	text-decoration: none;
+	font-size: $font-size-h1;
+	font-family: $font-family-amatic;
+}
+.navigation-link-home {
+	margin-top: -44px;
+	&.active {
+		margin-top: -4px;
+	}
+}
+.navigation-link-about {
+}
+.content-moscas {
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
 	position: absolute;
 }
-
-.mosca{
+.mosca {
 	top: 50%;
 	left: 50%;
 	width: 19px;
 	height: 18px;
 	position: absolute;
 	background: transparent image-url('mosca-right.png') 0 0 no-repeat;
-	&.m6{
+	&.m1 {
+		margin-left: -320px;
+	}
+	&.m2 {
+		margin-top: -150px;
+		margin-left: -320px;
+	}
+	&.m3 {
+		margin-top: -130px;
+		margin-left: -210px;
+	}
+	&.m4 {
+		margin-top: -40px;
+		margin-left: 140px;
+	}
+	&.m5 {
+		margin-left: 200px;
 		@include transform(rotate(45deg));
 	}
+	&.m6 {
+		margin-top: -60px;
+		margin-left: 230px;
+	}
 }
-
-.fig-home{
+.fig-home {
 	top: 50%;
 	left: 50%;
 	position: absolute;
 }
-
-.luz{
+.luz {
 	top: -100px;
 	height: 0;
 	opacity: 0;
-	margin-left: -447px;
-	&.active{
+	margin-left: -482px;
+	&.active {
 		height: auto;
 		opacity: 0.8;
 	}
 }
-
-.vakka{
-	margin-top: -150px;
-	margin-left: -260px;
+.luz-top{
+	top: 0px;
+	left: 50%;
+	opacity: 0;
+	height: 16px;
+	width: 579px;
+	position: fixed;
+	margin-left: -290px;
+	background: transparent image-url('luz_teto.png') 0 0 no-repeat;
 	&.active{
-		@include transform(rotate(-10deg));
+		opacity: 1;
 	}
 }
-
-.error-404{
-	.vakka{
+.vakka {
+	width: 525px;
+	margin-top: -150px;
+	margin-left: -303px;
+	&.active {
+		@include transform(rotate(-8deg));
+	}
+}
+.error-404 {
+	.vakka {
 		margin-left: -390px;
 	}
 }
-
-.grama{
+.grama {
+	width: 955px;
 	margin-top: 85px;
-	margin-left: -480px;
-	&.active{
-		@include transform(rotate(5deg));
+	margin-left: -475px;
+	&.active {
+		@include transform(rotate(3deg));
 	}
 }
-
-.placa{
+.placa {
+	width: 236px;
 	margin-top: -40px;
-	margin-left: 283px;
-	&.active{
+	margin-left: 243px;
+	&.active {
 		@include transform(rotate(30deg));
 	}
 }
-
-.home-text{
+.home-text {
 	margin-top: 230px;
 	margin-left: -222px;
-	.text{
+	.text {
 		color: $gray;
 		text-align: center;
 		font-size: $font-size-h2;
-		strong{
+		strong {
 			color: rgb(43, 3, 49);
 			font-size: $font-size-h1;
-			font-family: $font-family-amatic_bold;
+			font-family: $font-family-amatic;
 		}
 	}
-	&.active{
+	&.active {
 		@include transform(rotate(-5deg));
 	}
 }
-
-.arrow-bottom{
+.arrow-bottom {
 	top: 90%;
 	left: 50%;
 	width: 30px;
@@ -108,55 +169,53 @@
 	border-top-color: #666;
 	border-right-color: #666;
 	@include transform(rotate(135deg));
-	&.active{
+	&.active {
 		@include transform(rotate(120deg));
 	}
 }
-
-.vakka.active, .grama.active, .placa.active, .home-text.active{
+.vakka.active, .placa.active, .content-moscas.active {
 	-webkit-filter: blur(2px);
 	-moz-filter: blur(2px);
 }
-
-.figure-content{
+.home-text.active, .grama.active, .arrow-bottom.active {
+	-webkit-filter: blur(1px);
+	-moz-filter: blur(1px);
+}
+.figure-content {
 	top: 0;
 	left: 0;
 	width: 100%;
 	position: fixed;
-	&.bg{
+	&.bg {
 		top: 150px;
 	}
-	&.logo{
+	&.logo {
 		top: 30%;
 		z-index: 1;
 		margin-top: -170px;
-		&.active{
+		&.active {
 			top: 55px;
 			@include transform(scale(.3));
 		}
 	}
 }
-
-.jobs{
+.jobs {
 	top: 0;
 	width: 90%;
 	margin: 0 auto;
 	position: relative;
 }
-
-.content.pepsi{
-	.content-step:first-child{
+.content.pepsi {
+	.content-step:first-child {
 		margin-top: 100px;
 	}
 }
-
-.content-step{
+.content-step {
 	display: block;
 	max-width: 100%;
 	margin: 50px auto;
 }
-
-.content-step-img{
+.content-step-img {
 	display: block;
 	margin: 0 auto;
 	max-width: 100%;
