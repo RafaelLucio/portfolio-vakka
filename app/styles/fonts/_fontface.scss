@@ -6,103 +6,17 @@
 @include font-face("amatic_scbold", font-files("Amatic_SC/amaticsc-bold-webfont.eot", "Amatic_SC/amaticsc-bold-webfont.eot?#iefix", "Amatic_SC/amaticsc-bold-webfont.woff", "Amatic_SC/amaticsc-bold-webfont.ttf", "Amatic_SC/amaticsc-bold-webfont.svg#amatic_scbold"));
 @include font-face("amatic_scregular", font-files("Amatic_SC/amaticsc-regular-webfont.eot", "Amatic_SC/amaticsc-regular-webfont.eot?#iefix", "Amatic_SC/amaticsc-regular-webfont.woff", "Amatic_SC/amaticsc-regular-webfont.ttf", "Amatic_SC/amaticsc-regular-webfont.svg#amatic_scregular"));
 
-@font-face {
-    font-family: 'josefin_slabbold';
-    src: url('Josefin_Slab/josefinslab-bold-webfont.eot');
-    src: url('Josefin_Slab/josefinslab-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('Josefin_Slab/josefinslab-bold-webfont.woff') format('woff'),
-         url('Josefin_Slab/josefinslab-bold-webfont.ttf') format('truetype'),
-         url('Josefin_Slab/josefinslab-bold-webfont.svg#josefin_slabbold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'josefin_slabbold_italic';
-    src: url('Josefin_Slab/josefinslab-bolditalic-webfont.eot');
-    src: url('Josefin_Slab/josefinslab-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('Josefin_Slab/josefinslab-bolditalic-webfont.woff') format('woff'),
-         url('Josefin_Slab/josefinslab-bolditalic-webfont.ttf') format('truetype'),
-         url('Josefin_Slab/josefinslab-bolditalic-webfont.svg#josefin_slabbold_italic') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'josefin_slabitalic';
-    src: url('Josefin_Slab/josefinslab-italic-webfont.eot');
-    src: url('Josefin_Slab/josefinslab-italic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('Josefin_Slab/josefinslab-italic-webfont.woff') format('woff'),
-         url('Josefin_Slab/josefinslab-italic-webfont.ttf') format('truetype'),
-         url('Josefin_Slab/josefinslab-italic-webfont.svg#josefin_slabitalic') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'josefin_slablight';
-    src: url('Josefin_Slab/josefinslab-light-webfont.eot');
-    src: url('Josefin_Slab/josefinslab-light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('Josefin_Slab/josefinslab-light-webfont.woff') format('woff'),
-         url('Josefin_Slab/josefinslab-light-webfont.ttf') format('truetype'),
-         url('Josefin_Slab/josefinslab-light-webfont.svg#josefin_slablight') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'josefin_slablight_italic';
-    src: url('Josefin_Slab/josefinslab-lightitalic-webfont.eot');
-    src: url('Josefin_Slab/josefinslab-lightitalic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('Josefin_Slab/josefinslab-lightitalic-webfont.woff') format('woff'),
-         url('Josefin_Slab/josefinslab-lightitalic-webfont.ttf') format('truetype'),
-         url('Josefin_Slab/josefinslab-lightitalic-webfont.svg#josefin_slablight_italic') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'josefin_slabregular';
-    src: url('Josefin_Slab/josefinslab-regular-webfont.eot');
-    src: url('Josefin_Slab/josefinslab-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('Josefin_Slab/josefinslab-regular-webfont.woff') format('woff'),
-         url('Josefin_Slab/josefinslab-regular-webfont.ttf') format('truetype'),
-         url('Josefin_Slab/josefinslab-regular-webfont.svg#josefin_slabregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'josefin_slabsemibold';
-    src: url('Josefin_Slab/josefinslab-semibold-webfont.eot');
-    src: url('Josefin_Slab/josefinslab-semibold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('Josefin_Slab/josefinslab-semibold-webfont.woff') format('woff'),
-         url('Josefin_Slab/josefinslab-semibold-webfont.ttf') format('truetype'),
-         url('Josefin_Slab/josefinslab-semibold-webfont.svg#josefin_slabsemibold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'josefin_slabsemibold_italic';
-    src: url('Josefin_Slab/josefinslab-semibolditalic-webfont.eot');
-    src: url('Josefin_Slab/josefinslab-semibolditalic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('Josefin_Slab/josefinslab-semibolditalic-webfont.woff') format('woff'),
-         url('Josefin_Slab/josefinslab-semibolditalic-webfont.ttf') format('truetype'),
-         url('Josefin_Slab/josefinslab-semibolditalic-webfont.svg#josefin_slabsemibold_italic') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'josefin_slabthin';
-    src: url('Josefin_Slab/josefinslab-thin-webfont.eot');
-    src: url('Josefin_Slab/josefinslab-thin-webfont.eot?#iefix') format('embedded-opentype'),
-         url('Josefin_Slab/josefinslab-thin-webfont.woff') format('woff'),
-         url('Josefin_Slab/josefinslab-thin-webfont.ttf') format('truetype'),
-         url('Josefin_Slab/josefinslab-thin-webfont.svg#josefin_slabthin') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'josefin_slabthin_italic';
-    src: url('Josefin_Slab/josefinslab-thinitalic-webfont.eot');
-    src: url('Josefin_Slab/josefinslab-thinitalic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('Josefin_Slab/josefinslab-thinitalic-webfont.woff') format('woff'),
-         url('Josefin_Slab/josefinslab-thinitalic-webfont.ttf') format('truetype'),
-         url('Josefin_Slab/josefinslab-thinitalic-webfont.svg#josefin_slabthin_italic') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
+// 
+// Josefin Slab
+// --------------------------------------------------
+
+@include font-face("josefin_slabbold", font-files("Josefin_Slab/josefinslab-bold-webfont.eot", "Josefin_Slab/josefinslab-bold-webfont.eot?#iefix", "Josefin_Slab/josefinslab-bold-webfont.woff", "Josefin_Slab/josefinslab-bold-webfont.ttf", "Josefin_Slab/josefinslab-bold-webfont.svg#josefin_slabbold"));
+@include font-face("josefin_slabbold_italic", font-files("Josefin_Slab/josefinslab-bolditalic-webfont.eot", "Josefin_Slab/josefinslab-bolditalic-webfont.eot?#iefix", "Josefin_Slab/josefinslab-bolditalic-webfont.woff", "Josefin_Slab/josefinslab-bolditalic-webfont.ttf", "Josefin_Slab/josefinslab-bolditalic-webfont.svg#josefin_slabbold_italic"));
+@include font-face("josefin_slabitalic", font-files("Josefin_Slab/josefinslab-italic-webfont.eot", "Josefin_Slab/josefinslab-italic-webfont.eot?#iefix", "Josefin_Slab/josefinslab-italic-webfont.woff", "Josefin_Slab/josefinslab-italic-webfont.ttf", "Josefin_Slab/josefinslab-italic-webfont.svg#josefin_slabitalic"));
+@include font-face("josefin_slablight", font-files("Josefin_Slab/josefinslab-light-webfont.eot", "Josefin_Slab/josefinslab-light-webfont.eot?#iefix", "Josefin_Slab/josefinslab-light-webfont.woff", "Josefin_Slab/josefinslab-light-webfont.ttf", "Josefin_Slab/josefinslab-light-webfont.svg#josefin_slablight"));
+@include font-face("josefin_slablight_italic", font-files("Josefin_Slab/josefinslab-lightitalic-webfont.eot", "Josefin_Slab/josefinslab-lightitalic-webfont.eot?#iefix", "Josefin_Slab/josefinslab-lightitalic-webfont.woff", "Josefin_Slab/josefinslab-lightitalic-webfont.ttf", "Josefin_Slab/josefinslab-lightitalic-webfont.svg#josefin_slablight_italic"));
+@include font-face("josefin_slabregular", font-files("Josefin_Slab/josefinslab-regular-webfont.eot", "Josefin_Slab/josefinslab-regular-webfont.eot?#iefix", "Josefin_Slab/josefinslab-regular-webfont.woff", "Josefin_Slab/josefinslab-regular-webfont.ttf", "Josefin_Slab/josefinslab-regular-webfont.svg#josefin_slabregular"));
+@include font-face("josefin_slabsemibold", font-files("Josefin_Slab/josefinslab-semibold-webfont.eot", "Josefin_Slab/josefinslab-semibold-webfont.eot?#iefix", "Josefin_Slab/josefinslab-semibold-webfont.woff", "Josefin_Slab/josefinslab-semibold-webfont.ttf", "Josefin_Slab/josefinslab-semibold-webfont.svg#josefin_slabsemibold"));
+@include font-face("josefin_slabsemibold_italic", font-files("Josefin_Slab/josefinslab-semibolditalic-webfont.eot", "Josefin_Slab/josefinslab-semibolditalic-webfont.eot?#iefix", "Josefin_Slab/josefinslab-semibolditalic-webfont.woff", "Josefin_Slab/josefinslab-semibolditalic-webfont.ttf", "Josefin_Slab/josefinslab-semibolditalic-webfont.svg#josefin_slabsemibold_italic"));
+@include font-face("josefin_slabthin", font-files("Josefin_Slab/josefinslab-thin-webfont.eot", "Josefin_Slab/josefinslab-thin-webfont.eot?#iefix", "Josefin_Slab/josefinslab-thin-webfont.woff", "Josefin_Slab/josefinslab-thin-webfont.ttf", "Josefin_Slab/josefinslab-thin-webfont.svg#josefin_slabthin"));
+@include font-face("josefin_slabthin_italic", font-files("Josefin_Slab/josefinslab-thinitalic-webfont.eot", "Josefin_Slab/josefinslab-thinitalic-webfont.eot?#iefix", "Josefin_Slab/josefinslab-thinitalic-webfont.woff", "Josefin_Slab/josefinslab-thinitalic-webfont.ttf", "Josefin_Slab/josefinslab-thinitalic-webfont.svg#josefin_slabthin_italic"));
