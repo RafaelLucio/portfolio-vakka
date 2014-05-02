@@ -54,8 +54,6 @@
 .mosca {
 	top: 50%;
 	left: 50%;
-	width: 19px;
-	height: 18px;
 	position: absolute;
 	background: transparent image-url('mosca-right.png') 0 0 no-repeat;
 	&.m1 {
@@ -88,12 +86,10 @@
 	position: absolute;
 }
 .luz {
-	top: -100px;
-	height: 0;
+	top: 0px;
 	opacity: 0;
 	margin-left: -580px;
 	&.active {
-		height: auto;
 		opacity: 0.8;
 	}
 }
@@ -102,7 +98,6 @@
 	left: 50%;
 	opacity: 0;
 	height: 16px;
-	width: 579px;
 	position: fixed;
 	margin-left: -290px;
 	background: transparent image-url('luz_teto.png') 0 0 no-repeat;
@@ -111,9 +106,8 @@
 	}
 }
 .vakka {
-	width: 525px;
 	margin-top: -150px;
-	margin-left: -303px;
+	margin-left: -290px;
 	&.active {
 		@include transform(rotate(-8deg));
 	}
@@ -132,23 +126,33 @@
 	}
 }
 .placa {
-	width: 236px;
 	margin-top: -40px;
 	margin-left: 243px;
 	&.active {
+		margin-left: 300px;
+		margin-top: 0;
 		@include transform(rotate(30deg));
+	}
+	&.sombra{
+		opacity: 1;
+		margin-top: 100px;
+		margin-left: 250px;
+		&.active {
+			opacity: 0;
+			@include transform(rotate(0deg));
+		}
 	}
 }
 .home-text {
 	margin-top: 230px;
-	margin-left: -222px;
+	margin-left: -250px;
 	.text {
 		color: $gray;
 		text-align: center;
-		font-size: $font-size-h2;
+		font-size: $font-size-h2 - 2;
 		strong {
 			color: rgb(43, 3, 49);
-			font-size: $font-size-h1;
+			font-size: $font-size-h1 + 5;
 			font-family: $font-family-amatic;
 		}
 	}
@@ -173,7 +177,7 @@
 		@include transform(rotate(120deg));
 	}
 }
-.vakka.active, .placa.active, .content-moscas.active {
+.placa.active, .content-moscas.active {
 	-webkit-filter: blur(2px);
 	-moz-filter: blur(2px);
 }

@@ -1,81 +1,87 @@
-// 
-// About 
+//
+// About
 // -----------------------------------
 
-.about{
-	@extend .home;
+.about {
+	@include clearfix();
+	width: 100%;
 	font-size: $font-size-h3;
 }
-
-.about-header, .about-article{
+.about-header {
 	top: 50%;
 	left: 50%;
 	position: absolute;
+	margin-top: -205px;
+	margin-left: -225px;
 }
-
-.about-header{
-	margin-top: -220px;
-	margin-left: -187px;
-}
-
-.about-header-title{
+.about-header-title {
 	font-family: $font-family-josefin_slabitalic;
 	font-style: italic;
-	font-size: $font-size-h5;
+	font-size: $font-size-h4;
 	letter-spacing: 2px;
+	color: #555;
 }
-
-.about-article{
-	left: 10%;
-	width: 100%;
-	margin-top: - 150px;
+.about-article {
+	@include clearfix();
+	margin: 180px auto;
 }
-
-.about-article-content{
+.about-article-content {
+	@include clearfix();
+	width: 805px;
 	display: block;
 	margin: 0 auto;
 }
-
-.about-article-item{
+.about-article-item {
 	float: left;
-	width: 40%;
-	height: 450px;
-	padding-top: 50px;
-	padding-right: 20px;
-	&:first-child{
-		margin-right: 40px;
+	width: 395px;
+	height: 400px;
+	padding-top: 35px;
+	&:first-child {
+		width: 410px;
+		padding-top: 100px;
 		border-right: 1px solid #ccc;
 	}
-	p{
+}
+.item-content {
+	width: 80%;
+	margin: 0 auto;
+	p {
 		color: $gray;
 		font-size: $font-size-h2*1.2;
-		strong{
+		strong {
 			color: rgb(43, 3, 49);
 			font-size: $font-size-h1*1.4;
 			font-family: $font-family-amatic;
 		}
 	}
 }
-
-.about-article-item-line{
+.about-article-item-line {
 	width: 10px;
 	margin: 20px 0;
 	border: 1px solid #ccc;
 }
-
-.about-article-item-email{}
-
-.about-article-item-link{
+.about-article-item-email {
+	position: relative;
+	&:before {
+		content: '';
+		top: -5px;
+		left: -15px;
+		width: 19px;
+		height: 18px;
+		position: absolute;
+		background: transparent image-url('mosca-right.png') 0 0 no-repeat;
+	}
+}
+.about-article-item-link {
 	color: $gray;
 	font-size: $font-size-h2;
 	text-decoration: none;
 }
-
-.about-article-item-title{}
-
-.about-article-item-group{
+.about-article-item-title {
+}
+.about-article-item-group {
 	margin: 20px 0;
-	p:last-child{
+	p:last-child {
 		font-size: $font-size-h2;
 	}
 }
