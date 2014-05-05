@@ -2,42 +2,33 @@
 	background: rgb(43, 3, 49);
 	text-shadow: none;
 }
-
 ::selection {
 	background: rgb(43, 3, 49);
 	text-shadow: none;
 }
-
 ::-webkit-scrollbar {
 	width: $scroll-width;
 	height: $scroll-height;
 }
-
-::-webkit-scrollbar-button:start:decrement,
-::-webkit-scrollbar-button:end:increment { 
+::-webkit-scrollbar-button:start:decrement, ::-webkit-scrollbar-button:end:increment {
 	display: none;
 }
-
-::-webkit-scrollbar-track-piece { 
+::-webkit-scrollbar-track-piece {
 	background-color: $scrollbar-track-piece;
-	box-shadow: inset 1px 1px 0 rgba(0,0,0,.1),inset -1px -1px 0 rgba(0,0,0,.07);
+	box-shadow: inset 1px 1px 0 rgba(0, 0, 0, .1), inset -1px -1px 0 rgba(0, 0, 0, .07);
 }
-
-::-webkit-scrollbar-thumb:vertical { 
+::-webkit-scrollbar-thumb:vertical {
 	background-color: $scrollbar-thumb-vertical;
 }
-
-::-webkit-scrollbar-thumb:horizontal { 
+::-webkit-scrollbar-thumb:horizontal {
 	background-color: $scrollbar-thumb-horizontal;
 }
-
 *, *:before, *:after {
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
-
-html, body{
+html, body {
 	width: 100%;
 	height: 100%;
 	margin: 0;
@@ -47,12 +38,28 @@ html, body{
 	color: $black;
 	background-color: $body-bg;
 }
-
-.overlay{
+.overlay {
 	left: 0;
 	width: 100%;
 	height: 100%;
 	display: block;
 	position: absolute;
-	background-color: rgba(255,255,255,.6);
+	background-color: rgba(255, 255, 255, .6);
+}
+.figure-content{
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	&.bg{
+		.content-step-img{
+			@include transform(translateY(50%));
+		}
+	}
+}
+.content-step-img{
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
 }

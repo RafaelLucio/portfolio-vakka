@@ -1,3 +1,9 @@
+/**
+ *    Portfolio Vakka
+ *
+ *    @author Rafael Antonio Lucio <rafaelantoniolucio@gmail.com>
+ */
+
 /* Reset */
 @import "compass/reset";
 @import "compass/utilities/general/clearfix";
@@ -21,5 +27,8 @@
 
 /* Layouts */
 @import "layouts/breakpoints";
+@import "layouts/navigation";
 @import "layouts/home";
+@import "layouts/jobs";
 @import "layouts/about";
+@import "layouts/error";

@@ -2,452 +2,431 @@
 // Breackpoints
 // -----------------------------------
 
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) {
-	/* Styles */
-	.mosca{
-		&.m1{}
-		&.m2{}
-		&.m3{}
-		&.m4{}
-		&.m5{}
-		&.m6{}
-	}
-	.luz{}
-	.vakka{}
-	.grama{}
-	.placa{}
-	.home-text{}
-	.arrow-bottom{}
-	.figure-content{
-		&.logo{
-			&.active{
-			}
-		}
-	}
-}
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) {
-	/* Styles */
-	.mosca{
-		&.m1{}
-		&.m2{}
-		&.m3{}
-		&.m4{}
-		&.m5{}
-		&.m6{}
-	}
-	.luz{}
-	.vakka{}
-	.grama{}
-	.placa{}
-	.home-text{}
-	.arrow-bottom{}
-	.figure-content{
-		&.logo{
-			&.active{
-			}
-		}
-	}
-}
-/* iPads (landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
-	/* Styles */
-	.mosca{
-		&.m1{}
-		&.m2{}
-		&.m3{}
-		&.m4{}
-		&.m5{}
-		&.m6{}
-	}
-	.luz{}
-	.vakka{}
-	.grama{}
-	.placa{}
-	.home-text{}
-	.arrow-bottom{}
-	.figure-content{
-		&.logo{
-			&.active{
-			}
-		}
-	}
-}
-/* iPads (portrait) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
-	/* Styles */
-	.mosca{
-		&.m1{}
-		&.m2{}
-		&.m3{}
-		&.m4{}
-		&.m5{}
-		&.m6{}
-	}
-	.luz{}
-	.vakka{}
-	.grama{}
-	.placa{}
-	.home-text{}
-	.arrow-bottom{}
-	.figure-content{
-		&.logo{
-			&.active{
-			}
-		}
-	}
-}
-/* iPhone 4 ----------- */
-@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
-	/* Styles */
-	.mosca{
-		&.m1{}
-		&.m2{}
-		&.m3{}
-		&.m4{}
-		&.m5{}
-		&.m6{}
-	}
-	.luz{}
-	.vakka{}
-	.grama{}
-	.placa{}
-	.home-text{}
-	.arrow-bottom{}
-	.figure-content{
-		&.logo{
-			&.active{
-			}
-		}
-	}
-}
-
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width : 320px){
-	/* Styles */
-	.home{
-		width: 100%;
-	}
-	.vakka.active, .grama.active, .placa.active, .home-text.active{
-		@include transform(rotate(0));
-		-webkit-filter: blur(0px) !important;
-		-moz-filter: blur(0px) !important;
-	}
-	.mosca{
-		&.m4{
-			margin-top: 0px;
-			margin-left: 23px;
-		}
-		&.m5{
-			margin-left: 80px;
-			margin-top: 75px;
-		}
-		&.m6{
-			margin-top: -20px;
-			margin-left: 90px;
+	.figure-content.logo {
+		@include transform(scale(.5) !important);
+		margin-top: -250px !important;
+		&.active{
+			@include transform(scale(.3) !important);
+			margin-top: -125px !important;
 		}
 	}
-	.luz{
+	.home .luz{
 		display: none !important;
 	}
-	.vakka{
-		left: 0;
-		width: 100%;
-		overflow: hidden;
-		margin-left: -160px !important;
-		.content-step-img{
-			width: 525px;
-			max-width: 525px;
-			min-width: 525px;
-			margin-top: 35px;
-			margin-left: -285px;
+	.home .content-moscas{
+		width: 440px;
+		height: 230px;
+		margin-top: -160px !important;
+		margin-left: -325px;
+		top: auto !important;
+		bottom: 25px !important;
+		.mosca.m1{
+			top: 130px !important;
 		}
-		&.active {
-			-webkit-transform: rotate(0deg) !important;
-			-moz-transform: rotate(0deg) !important;
+		.mosca.m3{
+			left: 120px !important;
 		}
-	}
-	.grama{
-		left: -40px !important;
-		width: 320px !important;
-		margin-left: 0 !important;
-		overflow: hidden;
-		.content-step-img{
-			width: 955px;
-			max-width: 955px;
-			min-width: 955px;
-			margin-top: 32px;
-			margin-left: -200px;
+		.mosca.m4{
+			top: 57px !important;
+			left: 350px !important;
+			display: block !important;
 		}
-		&.active {
-			-webkit-transform: rotate(0deg) !important;
-			-moz-transform: rotate(0deg) !important;
+		.mosca.m5{
+			top: 57px !important;
+			left: 408px !important;
+			display: block !important;
+		}
+		.mosca.m6{
+			top: 105px !important;
+			left: 390px !important;
+			display: block !important;
 		}
 	}
-	.placa{
-		display: none !important;
-	}
-	.home-text{
-		display: none !important;
-	}
-	.arrow-bottom{
-		display: none !important;
-	}
-	.figure-content{
-		&.logo{
-			@include transform(scale(.7));
-			&.active{
+	.home .fig-home{
+		&.vakka{
+			width: 530px;
+			top: auto !important;
+			bottom: 25px !important;
+			margin-top: 0;
+			margin-left: -450px;
+			img{
+				max-width: 100%;
 			}
 		}
+		&.placa{
+			display: none !important;
+		}
+		&.placa-sombra{
+			display: none !important;
+		}
+		&.grama{
+			width: 110%;
+			margin-left: -60%;
+			overflow: hidden;
+			top: auto !important;
+			bottom: -32px !important;
+		}
+		&.home-text{
+			display: none !important;
+		}
+		&.arrow-bottom{
+			display: none !important;
+		}
 	}
-
-	/* ABOUT */
 	#about{
-		height: 185%;
-	}
-	.about-article{
-		margin: 90px auto !important;
-	}
-	.about-header{
-		top: 120px !important;
-		margin-top: 0px !important;
-		margin-left: -125px !important;
-		width: 80% !important;
-	}
-	.about-header-title{
-		font-size: 16px !important;
-	}
-	.about-article-content{
-		width: 100% !important;
-	}
-	.about-article-item{
-		width: 100% !important;
-		float: none !important;
-		height: 370px;
-		padding-top: 35px;
-		&:first-child{
-			// width: 100% !important;
-			border-right: 0px !important;
+		height: 700px;
+		.about-header{
+			width: 320px;
+			margin-left: -150px;
+		}
+		.about-article-content{
+			width: 100%;
+		}
+		.about-article-item{
+			width: 100%;
+			&:first-child{
+				padding-top: 40px;
+				height: 215px;
+				border: 0;
+			}
+		}
+		.item-content{
+			width: 90%;
 			p{
-				line-height: 40px;
+				font-size: 1.15em;
+				strong{
+					font-size: 1.3em;
+				}
 			}
 		}
 	}
-	.item-content p{
-		font-size: 29px !important;
-		strong{
-			font-size: 35px !important;
-		} 
-	}
 }
-// /* Smartphones (portrait) ----------- */
+/* Smartphones (portrait) ----------- */
 @media only screen and (min-width : 321px) and (max-width : 480px){
-// 	/* Styles */
-// 	.home{
-// 		width: 100%;
-// 	}
-// 	.mosca{
-// 		display: none !important;
-// 	}
-// 	.luz{}
-// 	.vakka{
-// 		left: 0;
-// 		margin-left: 0;
-// 		width: 100%;
-// 		overflow: hidden;
-// 		.content-step-img{
-// 			width: 525px;
-// 			max-width: 525px;
-// 			min-width: 525px;
-// 		}
-// 	}
-// 	.grama{
-// 		left: 0;
-// 		margin-left: 0;
-// 		width: 100%;
-// 		overflow: hidden;
-// 		.content-step-img{
-// 			width: 955px;
-// 			max-width: 955px;
-// 			min-width: 955px;
-// 		}
-// 	}
-// 	.placa{
-// 		display: none !important;
-// 	}
-// 	.home-text{}
-// 	.arrow-bottom{}
-// 	.figure-content{
-// 		&.logo{
-// 			&.active{
-// 			}
-// 		}
-// 	}
-}
-// /* Smartphones (portrait) ----------- */
-// @media only screen and (min-width : 481px) and (max-width : 600px){
-// 	/* Styles */
-// 	.home{}
-// 	.mosca{
-// 		display: none !important;
-// 	}
-// 	.luz{}
-// 	.vakka{
-// 		left: 0;
-// 		margin-left: 0;
-// 		width: 100%;
-// 		overflow: hidden;
-// 		.content-step-img{
-// 			width: 525px;
-// 			max-width: 525px;
-// 			min-width: 525px;
-// 		}
-// 	}
-// 	.grama{
-// 		left: 0;
-// 		margin-left: 0;
-// 		width: 100%;
-// 		overflow: hidden;
-// 		.content-step-img{
-// 			width: 955px;
-// 			max-width: 955px;
-// 			min-width: 955px;
-// 		}
-// 	}
-// 	.placa{
-// 		display: none !important;
-// 	}
-// 	.home-text{}
-// 	.arrow-bottom{}
-// 	.figure-content{
-// 		&.logo{
-// 			&.active{
-// 			}
-// 		}
-// 	}
-// }
-// /* Smartphones (portrait) ----------- */
-@media only screen and (min-width : 600px) and (max-width : 805px){
-	/* Styles */
-// 	.mosca{
-// 		&.m1{}
-// 		&.m2{}
-// 		&.m3{}
-// 		&.m4{}
-// 		&.m5{}
-// 		&.m6{}
-// 	}
-	.luz{
-		width: 640px;
-		top: 0 !important;
-		margin-top: 0px !important;
-		margin-left: -340px !important;
-	}
-	.vakka{
-		width: 300px;
-		margin-top: -80px !important;
-		margin-left: -150px !important;
-	}
-	.grama{
-		width: 600px !important;
-		margin-top: 50px !important;
-		margin-left: -300px !important;
-	}
-	.placa{
-		margin-top: -25px !important;
-		margin-left: 155px !important;
-		&.sombra{
-			width: 145px;
-			margin-top: 100px !important;
-			margin-left: 155px !important;
+	.figure-content.logo {
+		@include transform(scale(.5) !important);
+		margin-top: -250px !important;
+		&.active{
+			@include transform(scale(.3) !important);
+			margin-top: -125px !important;
 		}
 	}
-	.home-text{
-		margin-top: 150px !important;
+	.home .luz{
+		display: none !important;
 	}
-	.arrow-bottom{}
-	.figure-content{
-		&.logo{
-			@include transform(scale(.7));
-			&.active{
+	.home .content-moscas{
+		width: 440px;
+		height: 230px;
+		margin-top: -160px !important;
+		margin-left: -325px;
+		top: auto !important;
+		bottom: 25px !important;
+		.mosca.m1{
+			top: 130px !important;
+		}
+		.mosca.m3{
+			left: 120px !important;
+		}
+		.mosca.m4{
+			top: 57px !important;
+			left: 350px !important;
+			display: block !important;
+		}
+		.mosca.m5{
+			top: 57px !important;
+			left: 408px !important;
+			display: block !important;
+		}
+		.mosca.m6{
+			top: 105px !important;
+			left: 390px !important;
+			display: block !important;
+		}
+	}
+	.home .fig-home{
+		&.vakka{
+			width: 530px;
+			top: auto !important;
+			bottom: 25px !important;
+			margin-top: 0;
+			margin-left: -450px;
+			img{
+				max-width: 100%;
+			}
+		}
+		&.placa{
+			display: none !important;
+		}
+		&.placa-sombra{
+			display: none !important;
+		}
+		&.grama{
+			width: 110%;
+			margin-left: -60%;
+			overflow: hidden;
+			top: auto !important;
+			bottom: -32px !important;
+		}
+		&.home-text{
+			display: none !important;
+		}
+		&.arrow-bottom{
+			display: none !important;
+		}
+	}
+	#about{
+		height: 700px;
+		.about-header{
+			width: 320px;
+			margin-left: -150px;
+		}
+		.about-article-content{
+			width: 100%;
+		}
+		.about-article-item{
+			width: 100%;
+			&:first-child{
+				padding-top: 40px;
+				height: 215px;
+				border: 0;
+			}
+		}
+		.item-content{
+			width: 90%;
+			p{
+				font-size: 1.15em;
+				strong{
+					font-size: 1.3em;
+				}
 			}
 		}
 	}
 }
-// /* Desktops and laptops ----------- */
-// @media only screen and (min-width : 800px) and (max-width : 1023px) {
-// 	/* Styles */
-// 	.home{
-// 		@include transform(scale(.7));
-// 	}
-// 	.mosca{
-// 		&.m1{}
-// 		&.m2{}
-// 		&.m3{}
-// 		&.m4{}
-// 		&.m5{}
-// 		&.m6{}
-// 	}
-// 	.luz{}
-// 	.vakka{}
-// 	.grama{
-// 		margin-top: 165px;
-// 	}
-// 	.placa{}
-// 	.home-text{
-// 		margin-top: 200px;
-// 	}
-// 	.arrow-bottom{}
-// 	.figure-content{
-// 		&.logo{
-// 			&.active{
-// 			}
-// 		}
-// 	}
-// }
-/* More 1024 */
-@media only screen and (min-width: 1024px) {
-	/* Styles */
-	.mosca{
-		width: 19px;
-		height: 18px;
+/* Smartphones (portrait) ----------- */
+@media only screen and (min-width : 481px) and (max-width : 768px){
+	.figure-content.logo {
+		@include transform(scale(.7));
+		margin-top: -400px;
 	}
-	.luz-top{
-		width: 579px;
-		height: 16px;
-	}
-	.luz{
-		width: 1161px;
-		height: 738px;
-	}
-	.vakka{
-		width: 525px;
-		height: 325px;
-	}
-	.grama{
-		width: 955px;
-		height: 158px;
-	}
-	.placa{
-		width: 236px;
-		height: 171px;
-		&.sombra{
-			width: 204px;
-			height: 60px;
+	.home .luz{
+		width: 470px;
+		margin-top: -175px;
+		margin-left: -235px;
+		img{
+			max-width: 100%;
+			height: 738px;
 		}
 	}
-	.home-text{
-		width: 500px;
-		height: 40px;
-		.text{
-			font-size: $font-size-h1;
+	.home .content-moscas{
+		width: 440px;
+		height: 230px;
+		margin-top: -140px;
+		margin-left: -220px;
+		.mosca.m1{
+			top: 130px !important;
+		}
+		.mosca.m3{
+			left: 120px !important;
+		}
+		.mosca.m4{
+			top: 57px !important;
+			left: 350px !important;
+		}
+		.mosca.m5{
+			top: 57px !important;
+			left: 408px !important;
+		}
+		.mosca.m6{
+			top: 105px !important;
+			left: 390px !important;
+		}
+	}
+	.home .fig-home{
+		&.vakka{
+			width: 375px;
+			margin-top: -120px;
+			margin-left: -180px;
+			img{
+				max-width: 100%;
+			}
+		}
+		&.placa{
+			display: none !important;
+		}
+		&.placa-sombra{
+			display: none !important;
+		}
+		&.grama{
+			width: 475px;
+			margin-top: 55px !important;
+			margin-left: -240px;
+			img{
+				max-width: 100%;
+			}
+		}
+		&.home-text{
+			margin-top: 155px !important;
+			margin-left: -206px !important;
+			.text{
+				font-size: $font-size-h3;
+				strong{
+					font-size: $font-size-h1;
+				}
+			}
+		}
+	}
+	#about{
+		height: 800px;
+		.about-article-content{
+			width: 475px;
+		}
+		.about-article-item{
+			width: 100%;
+			&:first-child{
+				padding-top: 40px;
+				height: 260px;
+				border: 0;
+			}
+		}
+		.item-content{
+			width: 70%;
 		}
 	}
 }
 
-@media only screen and (max-height: 700px) {
-	.luz{
-		margin-top: -220px;
+/* Portrait tablet to landscape and desktop */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+	.figure-content.logo {
+		@include transform(scale(.7));
+		margin-top: -400px;
 	}
+	.home .luz{
+		width: 760px;
+		margin-top: -160px;
+		margin-left: -380px;
+		img{
+			max-width: 100%;
+			height: 738px;
+		}
+	}
+	.home .content-moscas{
+		width: 440px;
+		height: 230px;
+		margin-top: -140px;
+		margin-left: -220px;
+		.mosca.m1{
+			top: 130px !important;
+		}
+		.mosca.m3{
+			left: 120px !important;
+		}
+		.mosca.m4{
+			top: 57px !important;
+			left: 350px !important;
+		}
+		.mosca.m5{
+			top: 57px !important;
+			left: 408px !important;
+		}
+		.mosca.m6{
+			top: 105px !important;
+			left: 390px !important;
+		}
+	}
+	.home .fig-home{
+		&.vakka{
+			width: 375px;
+			margin-top: -120px;
+			margin-left: -180px;
+			img{
+				max-width: 100%;
+			}
+		}
+		&.placa{
+			width: 180px !important;
+			margin-top: -70px !important;
+			margin-left: 200px !important;
+			img{
+				max-width: 100% !important;
+			}
+		}
+		&.placa-sombra{
+			width: 180px !important;
+			margin-top: 40px !important;
+			margin-left: 195px !important;
+			img{
+				max-width: 100% !important;
+			}
+		}
+		&.grama{
+			width: 760px;
+			margin-top: 35px !important;
+			margin-left: -380px;
+			img{
+				max-width: 100%;
+			}
+		}
+		&.home-text{
+			margin-top: 155px !important;
+		}
+	}
+}
+
+@media only screen and (min-width: 1025px) and (max-width : 1170px){
+	.home .fig-home.placa.active{
+		margin-top: -100px;
+		margin-left: 247px;
+	}
+	.home .luz{
+		width: 1025px;
+		margin-left: -513px;
+		img{
+			max-width: 100%;
+			height: 738px;
+		}
+	}
+}
+@media only screen and (max-height: 768px) {
+	.figure-content.logo {
+		@include transform(scale(.7));
+		margin-top: -375px;
+	}
+	.luz{
+		margin-top: -180px;
+	}
+	.home .content-moscas{
+		margin-top: -140px;
+	}
+	.home .fig-home{
+		&.vakka{
+			margin-top: -120px;
+		}
+		&.placa{
+			margin-top: -20px;
+			&.active {
+				margin-top: -70px;
+			}
+		}
+		&.placa-sombra{
+			margin-top: 130px;
+		}
+		&.grama{
+			margin-top: 112.5px;
+		}
+		&.home-text{
+			margin-top: 255px;
+		}
+	}
+}
+@media only screen and (max-height: 768px) and (min-width: 768px) and (max-width: 1024px) {
+	.home .luz{
+		margin-top: -270px;
+	}
+}
+@media only screen and (max-height: 768px) and (min-width : 481px) and (max-width : 768px){
+	.home .luz{
+		margin-top: -290px;
+	}	
 }
