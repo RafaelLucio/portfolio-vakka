@@ -39,12 +39,12 @@
 	}
 }
 .luz{
-	top: 0;
+	top: -10px;
 	left: 50%;
-	// opacity: 0;
-	width: 654px;
-	height: 558px;
-	margin-left: -327px;
+	opacity: 0;
+	width: 884px;
+	height: 494px;
+	margin-left: -442px;
 	position: absolute;
 	z-index: 2;
 	&.active{
