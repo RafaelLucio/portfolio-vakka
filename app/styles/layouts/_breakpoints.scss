@@ -361,7 +361,7 @@
 		margin-left: 247px;
 	}
 }
-@media only screen and (max-height: 768px) {
+@media only screen and (max-height: 850px) {
 	.figure-content.logo {
 		@include transform(scale(.7));
 		margin-top: -375px;

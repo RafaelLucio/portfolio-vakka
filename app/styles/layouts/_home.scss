@@ -39,11 +39,12 @@
 	}
 }
 .luz{
-	top: -10px;
+	top: 0px;
 	left: 50%;
 	opacity: 0;
 	width: 884px;
 	height: 494px;
+	margin-top: -50px;
 	margin-left: -442px;
 	position: absolute;
 	z-index: 2;
@@ -100,7 +101,9 @@
 		margin-top: -50px;
 		margin-left: -265px;
 		&.active {
-			@include transform(rotate(-8deg));
+			margin-top: -150px;
+			margin-left: -265px;
+			@include transform(rotate(-15deg));
 		}
 	}
 	&.placa{
@@ -169,7 +172,7 @@
 	-webkit-filter: blur(2px);
 	-moz-filter: blur(2px);
 }
-.home-text.active, .grama.active, .arrow-bottom.active {
+.home-text.active, .arrow-bottom.active {
 	-webkit-filter: blur(1px);
 	-moz-filter: blur(1px);
 }
