@@ -19,12 +19,12 @@ $(function () {
 		$arrowBottom = $('.arrow-bottom'),
 		$contentMoscas = $('.content-moscas'),
 		$navigation = $('.navigation'),
-		srcVakka = $vakka.children().attr('src').replace('blur_vaca', 'vakka'),
-		srcPlaca = $placa.children().attr('src').replace('blur_placa', 'placa'),
-		srcGrama = $grama.children().attr('src').replace('blur_grama', 'grama'),
-		srcVakkaBlur = $vakka.children().attr('src').replace('vakka', 'blur_vaca'),
-		srcPlacaBlur = $placa.children().attr('src').replace('placa', 'blur_placa'),
-		srcGramaBlur = $grama.children().attr('src').replace('grama', 'blur_grama'),
+		srcVakka = 'vakka',
+		srcPlaca = 'placa',
+		srcGrama = 'grama',
+		srcVakkaBlur = 'blur_vaca',
+		srcPlacaBlur = 'blur_placa',
+		srcGramaBlur = 'blur_grama',
 		elemPos = $('#about').position().top;
 
 	if (userAgent > 0 || userAgent !== null) {
