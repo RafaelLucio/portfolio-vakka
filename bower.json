@@ -4,8 +4,8 @@
   "dependencies": {
     "modernizr": "~2.6.2",
     "jquery": "~1.11.0",
-    "jquery.stellar": "~0.6.2",
-    "jquery-nicescroll": "*"
+    "jquery-nicescroll": "*",
+    "jquery.stellar": "~0.6.2"
   },
   "devDependencies": {}
 }

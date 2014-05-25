@@ -8,38 +8,26 @@ $(function () {
 
 	var heightScreen = $(window).height(),
 		userAgent = navigator.userAgent.match('Chrome'),
+		$homeId = $('#home'),
 		$logo = $('.logo'),
 		$luz = $('.luz'),
 		$luzTop = $('.luz-top'),
-		$vakka = $('.vakka'),
-		$placa = $('.placa'),
-		$grama = $('.grama'),
-		$homeText = $('.home-text'),
 		$placaSombra = $('.placa-sombra'),
-		$arrowBottom = $('.arrow-bottom'),
-		$contentMoscas = $('.content-moscas'),
 		$navigation = $('.navigation'),
-		srcVakka = 'vakka',
-		srcPlaca = 'placa',
-		srcGrama = 'grama',
-		srcVakkaBlur = 'blur_vaca',
-		srcPlacaBlur = 'blur_placa',
-		srcGramaBlur = 'blur_grama',
 		elemPos = $('#about').position().top;
 
 	if (userAgent > 0 || userAgent !== null) {
 		$('html').niceScroll();
 	}
 
-	$.stellar({
-		horizontalScrolling: false,
-		verticalOffset: 0
+	$(window).stellar({
+		verticalScrolling: $homeId
 	});
 
 	$(window).scroll(function () {
 		var scrollPos = $(document).scrollTop();
 
-		if (scrollPos >= (elemPos-50)) {
+		if (scrollPos >= (elemPos - 50)) {
 			$navigation.find('a').eq(0).addClass('active');
 		} else {
 			$navigation.find('a').eq(0).removeClass('active');
@@ -49,34 +37,12 @@ $(function () {
 			if ($(this).scrollTop() > 0) {
 				$luz.addClass('active');
 				$luzTop.addClass('active');
-
-				$vakka.children('img').attr('src', srcVakkaBlur);
-				$placa.children('img').attr('src', srcPlacaBlur);
-				$grama.children('img').attr('src', srcGramaBlur);
 			}
 			if ($(this).scrollTop() > 20) {
-				$vakka.addClass('active');
-				$grama.addClass('active');
-				$placa.addClass('active');
-				$homeText.addClass('active');
 				$placaSombra.addClass('active');
-				$arrowBottom.addClass('active');
-				$contentMoscas.addClass('active');
 			}
 			if ($(this).scrollTop() < 20) {
-				$vakka.children('img').attr('src', srcVakka);
-				$grama.children('img').attr('src', srcGrama);
-				$placa.children('img').attr('src', srcPlaca);
-
-				$luz.removeClass('active');
-				$vakka.removeClass('active');
-				$grama.removeClass('active');
-				$placa.removeClass('active');
-				$luzTop.removeClass('active');
-				$homeText.removeClass('active');
 				$placaSombra.removeClass('active');
-				$arrowBottom.removeClass('active');
-				$contentMoscas.removeClass('active');
 			}
 			if ($(this).scrollTop() > heightScreen) {
 				$luzTop.removeClass('active');
