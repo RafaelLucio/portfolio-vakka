@@ -100,9 +100,11 @@
 	&.vakka{
 		margin-top: -50px;
 		margin-left: -265px;
+		display: block !important;
 		&.active {
 			margin-top: -150px;
 			margin-left: -265px;
+			display: block !important;
 			@include transform(rotate(-15deg));
 		}
 	}
@@ -110,18 +112,22 @@
 		margin-left: 270px;
 		margin-top: 50px;
 		z-index: 3;
+		display: block !important;
 		&.active {
 			margin-top: 0px;
 			margin-left: 330px;
+			display: block !important;
 			@include transform(rotate(25deg));
 		}
 	}
 	&.placa-sombra{
+		opacity: 1;
 		margin-top: 170px;
 		margin-left: 250px;
-		opacity: 1;
+		display: block !important;
 		&.active {
 			opacity: 0;
+			display: block !important;
 			@include transform(rotate(0deg));
 		}
 	}
@@ -129,13 +135,16 @@
 		margin-top: 182.5px;
 		margin-left: -491px;
 		z-index: 3;
+		display: block !important;
 		&.active {
+			display: block !important;
 			@include transform(rotate(2deg));
 		}
 	}
 	&.home-text{
 		margin-top: 340px;
 		margin-left: -240px;
+		display: block !important;
 		.text {
 			color: $gray;
 			text-align: center;
@@ -147,6 +156,7 @@
 			}
 		}
 		&.active {
+			display: block !important;
 			@include transform(rotate(-5deg));
 		}
 	}
@@ -155,15 +165,16 @@
 		left: 50%;
 		width: 30px;
 		height: 30px;
-		display: block;
 		cursor: pointer;
 		margin-left: -15px;
 		background: transparent;
+		display: block !important;
 		border: 1px solid transparent;
 		border-top-color: #666;
 		border-right-color: #666;
 		@include transform(rotate(135deg));
 		&.active {
+			display: block !important;
 			@include transform(rotate(120deg));
 		}			
 	}
