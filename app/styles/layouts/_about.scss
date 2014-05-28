@@ -10,7 +10,7 @@
 	top: 0;
 	left: 50%;
 	position: absolute;
-	margin-top: 135px;
+	margin-top: -50px;
 	margin-left: -225px;
 }
 .about-header-title {
@@ -21,14 +21,18 @@
 	color: #555;
 }
 .about-article {
-	@include clearfix();
-	margin: 180px auto;
+	top: 50%;
+	left: 50%;
+	margin-top: -150px;
+	margin-left: -415px;
+	position: absolute;
 }
 .about-article-content {
 	@include clearfix();
 	width: 830px;
 	display: block;
 	margin: 0 auto;
+	position: relative;
 }
 .about-article-item {
 	float: left;
@@ -51,12 +55,6 @@
 			font-size: 1.4em;
 			font-family: $font-family-amatic;
 		}
-		&:hover{
-			color: #771487;
-			strong{
-				color: #771487;
-			}
-		}
 	}
 }
 .about-article-item-line {
@@ -74,6 +72,9 @@
 		height: 18px;
 		position: absolute;
 		background: transparent image-url('mosca-right.png') 0 0 no-repeat;
+	}
+	&:hover{
+		color: #771487;
 	}
 }
 .about-article-item-link {

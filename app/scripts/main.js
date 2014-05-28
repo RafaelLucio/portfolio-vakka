@@ -14,7 +14,10 @@ $(function () {
 		elemPos = $('#about').position().top;
 
 	if (userAgent > 0 || userAgent !== null) {
-		$('html').niceScroll();
+		$('html').niceScroll({
+			cursoropacitymin: 1,
+			cursorwidth: 10
+		});
 	}
 
 	$(window).stellar({

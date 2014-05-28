@@ -10,6 +10,9 @@
 		top: 10px;
 		margin-top: -115px;
 		@include transform(scale(.3));
+		&.inside-abooute{
+			margin-top: 5%;
+		}
 	}
 	.content-step-img {
 		display: block;
@@ -165,7 +168,6 @@
 		left: 50%;
 		width: 30px;
 		height: 30px;
-		cursor: pointer;
 		margin-left: -15px;
 		background: transparent;
 		display: block !important;
