@@ -24,6 +24,8 @@ $(function () {
 	$(window).stellar({
 		verticalScrolling: $homeId
 	}).scroll(function () {
+		heightScreen = $(window).height();
+		documentHeight = $(document).height();
 		var scrollPos = documentHeight - (heightScreen + 50);
 
 		if ($(this).scrollTop() >= scrollPos) {
