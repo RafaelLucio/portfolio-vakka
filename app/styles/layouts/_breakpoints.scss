@@ -15,6 +15,9 @@
 	.home .luz{
 		display: none !important;
 	}
+	.about-article{
+		margin-left: -140px !important;
+	}
 	.home .content-moscas{
 		width: 440px;
 		height: 230px;
@@ -113,6 +116,9 @@
 			margin-top: -125px !important;
 		}
 	}
+	.about-article{
+		margin-left: -140px !important;
+	}
 	.home .luz{
 		display: none !important;
 	}
@@ -209,6 +215,9 @@
 	.figure-content.logo {
 		@include transform(scale(.7));
 		margin-top: -400px;
+	}
+	.about-article{
+		margin-left: -250px !important;
 	}
 	.home .content-moscas{
 		width: 440px;
@@ -368,6 +377,11 @@
 	}
 	.home .content-moscas{
 		margin-top: -140px;
+	}
+	.logo{
+		&.inside-abooute{
+			margin-top: -115px !important;
+		}
 	}
 	.home .fig-home{
 		&.vakka{

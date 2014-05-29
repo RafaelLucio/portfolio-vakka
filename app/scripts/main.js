@@ -7,11 +7,12 @@ $(function () {
 	'use strict';
 
 	var heightScreen = $(window).height(),
+		documentHeight = $(document).height(),
 		userAgent = navigator.userAgent.match('Chrome'),
 		$homeId = $('#home'),
 		$logo = $('.logo'),
 		$navigation = $('.navigation'),
-		elemPos = $('#about').position().top;
+		$placaSombra = $('.placa-sombra');
 
 	if (userAgent > 0 || userAgent !== null) {
 		$('html').niceScroll({
@@ -23,12 +24,21 @@ $(function () {
 	$(window).stellar({
 		verticalScrolling: $homeId
 	}).scroll(function () {
-		var scrollPos = $(document).scrollTop();
+		var scrollPos = documentHeight - (heightScreen + 50);
 
-		if (scrollPos >= (elemPos - 50)) {
+		if ($(this).scrollTop() >= scrollPos) {
 			$navigation.find('a').eq(0).addClass('active');
+			$logo.addClass('inside-abooute');
 		} else {
 			$navigation.find('a').eq(0).removeClass('active');
+			$logo.removeClass('inside-abooute');
+		}
+
+		if ($(this).scrollTop() > 70) {
+			$placaSombra.addClass('active');
+		}
+		if ($(this).scrollTop() < 70) {
+			$placaSombra.removeClass('active');
 		}
 
 		if ($(this).scrollTop() > heightScreen - 50) {
