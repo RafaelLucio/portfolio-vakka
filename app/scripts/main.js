@@ -14,12 +14,10 @@ $(function () {
 		$navigation = $('.navigation'),
 		$placaSombra = $('.placa-sombra');
 
-	if (userAgent > 0 || userAgent !== null) {
-		$('html').niceScroll({
-			cursoropacitymin: 1,
-			cursorwidth: 10
-		});
-	}
+	$('html').niceScroll({
+		cursoropacitymin: 1,
+		cursorwidth: 10
+	});
 
 	$(window).stellar({
 		verticalScrolling: $homeId
@@ -53,5 +51,10 @@ $(function () {
 
 	$navigation.on('click', function () {
 		$(this).children('a').eq(0).toggleClass('active');
+	});
+
+	$logo.on('click', function (ev) {
+		ev.preventDefault();
+		$('html, body').animate({scrollTop:0}, 2000);
 	});
 });
