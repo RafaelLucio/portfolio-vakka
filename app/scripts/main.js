@@ -53,8 +53,15 @@ $(function () {
 		$(this).children('a').eq(0).toggleClass('active');
 	});
 
-	$logo.on('click', function (ev) {
-		ev.preventDefault();
-		$('html, body').animate({scrollTop:0}, 2000);
-	});
+	var scrollTo = function ($element, position) {
+		$element.on('click', function (ev) {
+			ev.preventDefault();
+			$('html, body').animate({scrollTop:position}, 2000);
+		});
+	};
+
+	scrollTo($logo, 0);
+	scrollTo($('.navigation-link-home'), 0);
+	scrollTo($('.navigation-link-about'), $(document).height());
+
 });
