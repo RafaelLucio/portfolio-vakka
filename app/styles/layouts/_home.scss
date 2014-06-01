@@ -1,16 +1,18 @@
 //
-// Home
+// Logo
 // -----------------------------------
 .logo {
-	top: 50%;
+	top: 0;
+	left: 0;
 	z-index: 2;
-	height: auto;
-	margin-top: -340px;
+	width: 100%;
+	display: block;
+	position: fixed;
+	height: $heightLogo;
 	&.active {
-		top: 10px;
-		margin-top: -115px;
+		margin-top: ($heightLogo / 2 * -1) + 60;
 		@include transform(scale(.3));
-		&.inside-abooute{
+		&.inside-about {
 			margin-top: -55px;
 		}
 	}
@@ -20,172 +22,127 @@
 		max-width: 100%;
 	}
 }
+//
+// Home
+// -----------------------------------
 .home {
 	z-index: 3;
 	width: 100%;
 	height: 100%;
 	margin: 0 auto;
 	position: relative;
+	@include clearfix();
 }
-.luz-top{
-	top: 0px;
-	left: 50%;
-	width: 579px;
-	opacity: 0;
-	height: 16px;
-	position: fixed;
-	z-index: 3;
-	margin-left: -289.5px;
-	background: transparent image-url('luz_teto.png') 0 0 no-repeat;
-	&.active{
-		opacity: 1;
-	}
-}
-.luz{
-	top: 0px;
-	left: 50%;
-	opacity: 0;
-	width: 884px;
-	height: 494px;
-	margin-top: -50px;
-	margin-left: -442px;
-	position: absolute;
-	z-index: 2;
-	&.active{
-		opacity: 1;
-	}
-}
-.content-moscas{
+.content-moscas {
 	top: 50%;
 	left: 50%;
-	z-index: 3;
-	width: 600px;
-	height: 325px;
-	margin-top: -70px;
-	margin-left: -300px;
-	position: absolute;
-	.mosca{
-		width: 20px;
-		height: 20px;
-		position: absolute;
-		background: transparent image-url('mosca-right.png') 0 0 no-repeat;
-		&.m1{
-			top: 186px !important;
-			left: 20px !important;
-		}
-		&.m2{
-			top: 0 !important;
-			left: 80px !important;
-		}
-		&.m3{
-			top: 25px !important;
-			left: 145px !important;
-		}
-		&.m4{
-			top: 107px !important;
-			left: 490px !important;
-		}
-		&.m5{
-			top: 107px !important;
-			left: 563px !important;
-		}
-		&.m6{
-			top: 150px !important;
-			left: 530px !important;
-			@include transform(rotate(45deg));
-		}
-	}
+	position: relative;
+	width: $widthVakka + 100;
+	height: $heightVakka + 100;
+	margin-left: ($widthVakka + 100) / 2 * -1;
+	margin-top: ($heightVakka + 100) / 2 * -1;
 }
-.fig-home{
-	top: 50%;
-	left: 50%;
+.mosca {
+	z-index: 10;
+	width: 20px;
+	height: 20px;
 	position: absolute;
-	&.vakka{
-		margin-top: -50px;
-		margin-left: -265px;
-		display: block !important;
-		&.active {
-			margin-top: -150px;
-			margin-left: -265px;
-			display: block !important;
-			@include transform(rotate(-15deg));
-		}
-	}
-	&.placa{
-		margin-left: 270px;
-		margin-top: 50px;
-		z-index: 3;
-		display: block !important;
-		&.active {
-			margin-top: 0px;
-			margin-left: 330px;
-			display: block !important;
-			@include transform(rotate(25deg));
-		}
-	}
-	&.placa-sombra{
-		opacity: 1;
+	display: block !important;
+	background: transparent image-url('mosca-right.png') 0 0 no-repeat;
+	&.m1 {
 		margin-top: 170px;
-		margin-left: 250px;
-		display: block !important;
-		&.active {
-			opacity: 0;
-			display: block !important;
-			@include transform(rotate(0deg));
-		}
+		margin-left: 20px;
 	}
-	&.grama{
-		margin-top: 182.5px;
-		margin-left: -491px;
-		z-index: 3;
-		display: block !important;
-		&.active {
-			display: block !important;
-			@include transform(rotate(2deg));
-		}
+	&.m2 {
+		margin-top: 35px;
+		margin-left: 50px;
 	}
-	&.home-text{
-		margin-top: 340px;
-		margin-left: -240px;
-		display: block !important;
-		.text {
-			color: $gray;
-			text-align: center;
-			font-size: $font-size-h2 - 2;
-			strong {
-				color: rgb(43, 3, 49);
-				font-size: $font-size-h1 + 5;
-				font-family: $font-family-amatic;
-			}
-		}
-		&.active {
-			display: block !important;
-			@include transform(rotate(-5deg));
-		}
+	&.m3 {
+		margin-top: 30px;
+		margin-left: 155px;
 	}
-	&.arrow-bottom{
-		top: 93%;
-		left: 50%;
-		width: 30px;
-		height: 30px;
-		margin-left: -15px;
-		background: transparent;
-		display: block !important;
-		border: 1px solid transparent;
-		border-top-color: #666;
-		border-right-color: #666;
-		@include transform(rotate(135deg));
-		&.active {
-			display: block !important;
-			@include transform(rotate(120deg));
-		}			
+	&.m4 {
+		margin-top: 50px;
+		margin-left: calc(100% - 130px);
+	}
+	&.m5 {
+		margin-top: 20px;
+		margin-left: calc(100% - 40px);
+	}
+	&.m6 {
+		margin-top: 80px;
+		margin-left: calc(100% - 80px);
+		@include transform(rotate(45deg));
 	}
 }
-.content-moscas.active {
-	-webkit-filter: blur(2px);
-	-moz-filter: blur(2px);
+.fig-home {
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	display: block !important;
 }
-.home-text.active, .arrow-bottom.active {
-	-webkit-filter: blur(1px);
-	-moz-filter: blur(1px);
+.vakka {
+	width: $widthVakka;
+	height: $heightVakka;
+	margin-top: $heightVakka / 2 * -1;
+	margin-left: $widthVakka / 2 * -1;
+	background: transparent image-url('vakka.png') 0 0 no-repeat;
+}
+.grama {
+	width: $widthGrama;
+	height: $heightGrama;
+	margin-top: $heightGrama / 2 - 20;
+	margin-left: $widthGrama / 2 * -1;
+	background: transparent image-url('grama.png') 0 0 no-repeat;
+}
+.placa {
+	z-index: 3;
+	width: $widthPlaca;
+	height: $heightPlaca;
+	margin-left: $widthPlaca + 50;
+	margin-top: $heightPlaca / 2 * -1;
+	background: transparent image-url('placa.png') 0 0 no-repeat;
+}
+.placa-sombra {
+	opacity: 1;
+	width: $widthPlacaSombra;
+	height: $heightPlacaSombra;
+	margin-left: ($widthPlacaSombra / 2) + 70;
+	margin-top: $heightPlacaSombra - 70;
+	background: transparent image-url('placa_sombra.png') 0 0 no-repeat;
+	&.active {
+		opacity: 0;
+	}
+}
+.home-text {
+	width: $widthHomeText;
+	margin-top: $heightGrama + 70;
+	margin-left: $widthHomeText / 2 * -1;
+	.text {
+		color: $gray;
+		text-align: center;
+		font-size: $font-size-h2 - 2;
+		strong {
+			color: rgb(43, 3, 49);
+			font-size: $font-size-h1 + 5;
+			font-family: $font-family-amatic;
+		}
+	}
+}
+.arrow-bottom {
+	top: auto !important;
+	left: 50%;
+	bottom: 30px;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	margin-left: -15px;
+	border: 1px solid transparent;
+	border-top-color: #666;
+	border-right-color: #666;
+	background: transparent;
+	@include transform(rotate(135deg));
+	&:hover {
+		@include animations(balance-bell, 1s);
+	}
 }

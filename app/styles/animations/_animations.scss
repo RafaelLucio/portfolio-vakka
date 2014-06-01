@@ -1,15 +1,33 @@
-// 
+//
 // Animations
 // -----------------------------------
 
-.luz{
+.luz {
 	@include transition-duration(.5s);
 }
-
-.vakka, .grama, .placa, .placa-sombra, .home-text, .arrow-bottom{
+.vakka, .grama, .placa, .placa-sombra, .home-text, .arrow-bottom {
 	@include transition-duration(.7s);
 }
-
-.logo, .logo.active{
+.logo, .logo.active {
 	@include transition(all .3s ease 0);
+}
+@include keyframes(balance-bell) {
+	0% {
+		@include transform(rotate(135deg))
+	}
+	15% {
+		@include transform(rotate(120deg))
+	}
+	25% {
+		@include transform(rotate(150deg))
+	}
+	50% {
+		@include transform(rotate(120deg))
+	}
+	75% {
+		@include transform(rotate(150deg))
+	}
+	100% {
+		@include transform(rotate(135deg))
+	}
 }

@@ -7,31 +7,37 @@ $(function () {
 	'use strict';
 
 	var heightScreen = $(window).height(),
+		widthScreen = $(window).width(),
 		documentHeight = $(document).height(),
-		userAgent = navigator.userAgent.match('Chrome'),
 		$homeId = $('#home'),
 		$logo = $('.logo'),
 		$navigation = $('.navigation'),
-		$placaSombra = $('.placa-sombra');
+		$placaSombra = $('.placa-sombra'),
+		$arrowBottom = $('.arrow-bottom');
 
 	$('html').niceScroll({
 		cursoropacitymin: 1,
 		cursorwidth: 10
 	});
 
-	$(window).stellar({
-		verticalScrolling: $homeId
-	}).scroll(function () {
+	if (heightScreen > 480 && widthScreen > 480) {
+		$(window).stellar({
+			horizontalScrolling: false,
+			verticalScrolling: $homeId
+		});
+	}
+
+	$(window).scroll(function () {
 		heightScreen = $(window).height();
 		documentHeight = $(document).height();
 		var scrollPos = documentHeight - (heightScreen + 50);
 
 		if ($(this).scrollTop() >= scrollPos) {
 			$navigation.find('a').eq(0).addClass('active');
-			$logo.addClass('inside-abooute');
+			$logo.addClass('inside-about');
 		} else {
 			$navigation.find('a').eq(0).removeClass('active');
-			$logo.removeClass('inside-abooute');
+			$logo.removeClass('inside-about');
 		}
 
 		if ($(this).scrollTop() > 70) {
@@ -56,12 +62,14 @@ $(function () {
 	var scrollTo = function ($element, position) {
 		$element.on('click', function (ev) {
 			ev.preventDefault();
-			$('html, body').animate({scrollTop:position}, 2000);
+			$('html, body').animate({
+				scrollTop: position
+			}, 2000);
 		});
 	};
 
 	scrollTo($logo, 0);
+	scrollTo($arrowBottom, heightScreen);
 	scrollTo($('.navigation-link-home'), 0);
-	scrollTo($('.navigation-link-about'), $(document).height());
-
+	scrollTo($('.navigation-link-about'), documentHeight);
 });

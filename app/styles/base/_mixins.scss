@@ -1,0 +1,17 @@
+/* ANIMATIONS */
+@mixin animations($name, $duration){
+	animation: $name $duration;
+	/* Firefox: */
+	-moz-animation: $name $duration;
+	/* Safari and Chrome: */
+	-webkit-animation: $name $duration;
+	/* Opera: */
+	-o-animation: $name $duration;
+}
+/* FUNCTION ANIMATE KEYFRAME */
+@mixin keyframes($name) {
+	@-webkit-keyframes #{$name} { @content; }
+	@-moz-keyframes #{$name} { @content; }
+	@-o-keyframes #{$name} { @content; }
+	@keyframes #{$name} { @content; }
+}

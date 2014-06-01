@@ -4,283 +4,160 @@
 
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width : 320px){
-	.figure-content.logo {
-		@include transform(scale(.5) !important);
-		margin-top: -250px !important;
-		&.active{
-			@include transform(scale(.3) !important);
-			margin-top: -125px !important;
+	.logo{
+		@include transform(scale(.7));
+		margin-top: -55px;
+		&.active.inside-about{
+			top: -45px;
 		}
 	}
-	.home .luz{
-		display: none !important;
-	}
-	.about-article{
-		margin-left: -140px !important;
-	}
-	.home .content-moscas{
-		width: 440px;
-		height: 230px;
-		margin-top: -160px !important;
-		margin-left: -325px;
-		top: auto !important;
-		bottom: 25px !important;
-		.mosca.m1{
-			top: 130px !important;
+	.home{
+		.content-moscas{
+			display: none;
 		}
-		.mosca.m3{
-			left: 120px !important;
-		}
-		.mosca.m4{
-			top: 57px !important;
-			left: 350px !important;
-			display: block !important;
-		}
-		.mosca.m5{
-			top: 57px !important;
-			left: 408px !important;
-			display: block !important;
-		}
-		.mosca.m6{
-			top: 105px !important;
-			left: 390px !important;
-			display: block !important;
-		}
-	}
-	.home .fig-home{
-		&.vakka{
-			width: 530px;
-			top: auto !important;
-			bottom: 25px !important;
-			margin-top: 0;
-			margin-left: -450px;
-			img{
-				max-width: 100%;
+		.fig-home{
+			&.placa , &.placa-sombra, &.home-text, &.arrow-bottom{
+				display: none !important;
 			}
-		}
-		&.placa{
-			display: none !important;
-		}
-		&.placa-sombra{
-			display: none !important;
-		}
-		&.grama{
-			width: 110%;
-			margin-left: -60%;
-			overflow: hidden;
-			top: auto !important;
-			bottom: -32px !important;
-		}
-		&.home-text{
-			display: none !important;
-		}
-		&.arrow-bottom{
-			display: none !important;
+			&.vakka{
+				top: auto !important;
+				bottom: 40px !important;
+				margin-left: ($widthVakka * -1) + 130;
+			}
+			&.grama{
+				top: auto !important;
+				bottom: -30px !important;
+			}
 		}
 	}
 	#about{
-		height: 700px;
-		.about-header{
-			width: 320px;
-			margin-left: -150px;
+		height: 850px;
+		.about-article{
+			width: 100%;
+			margin-top: -180px;
+			margin-left: calc(50% - 100%);
+			.about-header{
+				left: 20px;
+				margin-left: 0;
+			}
 		}
 		.about-article-content{
-			width: 100%;
+			width: 420px;
 		}
 		.about-article-item{
 			width: 100%;
 			&:first-child{
 				padding-top: 40px;
-				height: 215px;
+				height: 260px;
 				border: 0;
 			}
-		}
-		.item-content{
-			width: 90%;
-			p{
-				font-size: 1.15em;
-				strong{
+			.item-content{
+				width: 90%;
+				p{
 					font-size: 1.3em;
 				}
+			}
+		}
+		.about-article-item-email{
+			.IN-widget{
+				display: block !important;
 			}
 		}
 	}
 }
 /* Smartphones (portrait) ----------- */
 @media only screen and (min-width : 321px) and (max-width : 480px){
-	.figure-content.logo {
-		@include transform(scale(.5) !important);
-		margin-top: -250px !important;
-		&.active{
-			@include transform(scale(.3) !important);
-			margin-top: -125px !important;
+	.logo{
+		@include transform(scale(.7));
+		margin-top: -55px;
+		&.active.inside-about{
+			top: -45px;
 		}
 	}
-	.about-article{
-		margin-left: -140px !important;
-	}
-	.home .luz{
-		display: none !important;
-	}
-	.home .content-moscas{
-		width: 440px;
-		height: 230px;
-		margin-top: -160px !important;
-		margin-left: -325px;
-		top: auto !important;
-		bottom: 25px !important;
-		.mosca.m1{
-			top: 130px !important;
+	.home{
+		.content-moscas{
+			display: none;
 		}
-		.mosca.m3{
-			left: 120px !important;
-		}
-		.mosca.m4{
-			top: 57px !important;
-			left: 350px !important;
-			display: block !important;
-		}
-		.mosca.m5{
-			top: 57px !important;
-			left: 408px !important;
-			display: block !important;
-		}
-		.mosca.m6{
-			top: 105px !important;
-			left: 390px !important;
-			display: block !important;
-		}
-	}
-	.home .fig-home{
-		&.vakka{
-			width: 530px;
-			top: auto !important;
-			bottom: 25px !important;
-			margin-top: 0;
-			margin-left: -450px;
-			img{
-				max-width: 100%;
+		.fig-home{
+			&.placa , &.placa-sombra, &.home-text, &.arrow-bottom{
+				display: none !important;
 			}
-		}
-		&.placa{
-			display: none !important;
-		}
-		&.placa-sombra{
-			display: none !important;
-		}
-		&.grama{
-			width: 110%;
-			margin-left: -60%;
-			overflow: hidden;
-			top: auto !important;
-			bottom: -32px !important;
-		}
-		&.home-text{
-			display: none !important;
-		}
-		&.arrow-bottom{
-			display: none !important;
+			&.vakka{
+				top: auto !important;
+				bottom: 40px !important;
+				margin-left: ($widthVakka * -1) + 130;
+			}
+			&.grama{
+				top: auto !important;
+				bottom: -30px !important;
+			}
 		}
 	}
 	#about{
-		height: 700px;
-		.about-header{
-			width: 320px;
-			margin-left: -150px;
+		height: 850px;
+		.about-article{
+			width: 100%;
+			margin-top: -180px;
+			margin-left: calc(50% - 100%);
+			.about-header{
+				left: 20px;
+				margin-left: 0;
+			}
 		}
 		.about-article-content{
-			width: 100%;
+			width: 420px;
 		}
 		.about-article-item{
 			width: 100%;
 			&:first-child{
 				padding-top: 40px;
-				height: 215px;
+				height: 260px;
 				border: 0;
 			}
-		}
-		.item-content{
-			width: 90%;
-			p{
-				font-size: 1.15em;
-				strong{
+			.item-content{
+				width: 90%;
+				p{
 					font-size: 1.3em;
 				}
+			}
+		}
+		.about-article-item-email{
+			.IN-widget{
+				display: block !important;
 			}
 		}
 	}
 }
 /* Smartphones (portrait) ----------- */
 @media only screen and (min-width : 481px) and (max-width : 768px){
-	.figure-content.logo {
+	.logo{
 		@include transform(scale(.7));
-		margin-top: -400px;
-	}
-	.about-article{
-		margin-left: -250px !important;
-	}
-	.home .content-moscas{
-		width: 440px;
-		height: 230px;
-		margin-top: -140px;
-		margin-left: -220px;
-		.mosca.m1{
-			top: 130px !important;
-		}
-		.mosca.m3{
-			left: 120px !important;
-		}
-		.mosca.m4{
-			top: 57px !important;
-			left: 350px !important;
-		}
-		.mosca.m5{
-			top: 57px !important;
-			left: 408px !important;
-		}
-		.mosca.m6{
-			top: 105px !important;
-			left: 390px !important;
+		margin-top: -55px;
+		&.active.inside-about{
+			top: -45px;
 		}
 	}
-	.home .fig-home{
-		&.vakka{
-			width: 375px;
-			margin-top: -120px;
-			margin-left: -180px;
-			img{
-				max-width: 100%;
+	.home{
+		.content-moscas{
+			@include transform(scale(.9));
+		}
+		.fig-home{
+			&.placa , &.placa-sombra{
+				display: none !important;
 			}
-		}
-		&.placa{
-			display: none !important;
-		}
-		&.placa-sombra{
-			display: none !important;
-		}
-		&.grama{
-			width: 475px;
-			margin-top: 55px !important;
-			margin-left: -240px;
-			img{
-				max-width: 100%;
-			}
-		}
-		&.home-text{
-			margin-top: 155px !important;
-			margin-left: -206px !important;
-			.text{
-				font-size: $font-size-h3;
-				strong{
-					font-size: $font-size-h1;
-				}
+			&.vakka{
+				@include transform(scale(.9));
 			}
 		}
 	}
 	#about{
-		height: 800px;
+		height: 950px;
+		.about-article{
+			width: 100%;
+			margin-left: calc(50% - 100%);
+		}
 		.about-article-content{
-			width: 475px;
+			width: 420px;
 		}
 		.about-article-item{
 			width: 100%;
@@ -290,117 +167,32 @@
 				border: 0;
 			}
 		}
-		.item-content{
-			width: 70%;
-		}
 	}
 }
 /* Portrait tablet to landscape and desktop */
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
-	.figure-content.logo {
+@media only screen and (min-width: 769px) and (max-width: 980px) {
+	.logo{
 		@include transform(scale(.7));
-		margin-top: -400px;
-	}
-	.home .content-moscas{
-		width: 440px;
-		height: 230px;
-		margin-top: -140px;
-		margin-left: -220px;
-		.mosca.m1{
-			top: 130px !important;
-		}
-		.mosca.m3{
-			left: 120px !important;
-		}
-		.mosca.m4{
-			top: 57px !important;
-			left: 350px !important;
-		}
-		.mosca.m5{
-			top: 57px !important;
-			left: 408px !important;
-		}
-		.mosca.m6{
-			top: 105px !important;
-			left: 390px !important;
+		margin-top: -55px;
+		&.active.inside-about{
+			top: -45px;
 		}
 	}
-	.home .fig-home{
-		&.vakka{
-			width: 375px;
-			margin-top: -120px;
-			margin-left: -180px;
-			img{
-				max-width: 100%;
+	.home{
+		.content-moscas{}
+		.fig-home{
+			&.placa , &.placa-sombra{
+				display: none !important;
 			}
 		}
-		&.placa{
-			width: 180px !important;
-			margin-top: -70px !important;
-			margin-left: 200px !important;
-			img{
-				max-width: 100% !important;
-			}
-		}
-		&.placa-sombra{
-			width: 180px !important;
-			margin-top: 40px !important;
-			margin-left: 195px !important;
-			img{
-				max-width: 100% !important;
-			}
-		}
-		&.grama{
-			width: 760px;
-			margin-top: 35px !important;
-			margin-left: -380px;
-			img{
-				max-width: 100%;
-			}
-		}
-		&.home-text{
-			margin-top: 155px !important;
-		}
-	}
-}
-/* Desktop */
-@media only screen and (min-width: 1025px) and (max-width : 1170px){
-	.home .fig-home.placa.active{
-		margin-top: -100px;
-		margin-left: 247px;
 	}
 }
 @media only screen and (max-height: 800px) {
-	.figure-content.logo {
-		@include transform(scale(.7));
-		margin-top: -375px;
-	}
-	.home .content-moscas{
-		margin-top: -140px;
-	}
 	.logo{
-		&.inside-abooute{
-			margin-top: -115px !important;
-		}
-	}
-	.home .fig-home{
-		&.vakka{
-			margin-top: -120px;
-		}
-		&.placa{
-			margin-top: -20px;
-			&.active {
-				margin-top: -70px;
-			}
-		}
-		&.placa-sombra{
-			margin-top: 100px;
-		}
-		&.grama{
-			margin-top: 112.5px;
-		}
-		&.home-text{
-			margin-top: 255px;
+		@include transform(scale(.7));
+		margin-top: -55px;
+		&.active.inside-about{
+			top: -45px;
 		}
 	}
 }
