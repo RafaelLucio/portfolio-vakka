@@ -4,9 +4,8 @@
 
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width : 320px){
-	.logo{
+	html body .logo{
 		@include transform(scale(.7));
-		margin-top: -55px;
 		&.active.inside-about{
 			top: -45px;
 		}
@@ -67,9 +66,8 @@
 }
 /* Smartphones (portrait) ----------- */
 @media only screen and (min-width : 321px) and (max-width : 480px){
-	.logo{
+	html body .logo{
 		@include transform(scale(.7));
-		margin-top: -55px;
 		&.active.inside-about{
 			top: -45px;
 		}
@@ -130,9 +128,8 @@
 }
 /* Smartphones (portrait) ----------- */
 @media only screen and (min-width : 481px) and (max-width : 768px){
-	.logo{
+	html body .logo{
 		@include transform(scale(.7));
-		margin-top: -55px;
 		&.active.inside-about{
 			top: -45px;
 		}
@@ -171,9 +168,8 @@
 }
 /* Portrait tablet to landscape and desktop */
 @media only screen and (min-width: 769px) and (max-width: 980px) {
-	.logo{
-		@include transform(scale(.7));
-		margin-top: -55px;
+	html body .logo{
+		@include transform(scale(.8));
 		&.active.inside-about{
 			top: -45px;
 		}

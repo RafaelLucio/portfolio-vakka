@@ -9,6 +9,7 @@
 	display: block;
 	position: fixed;
 	height: $heightLogo;
+	@include transform(scale(.9));
 	&.active {
 		margin-top: ($heightLogo / 2 * -1) + 60;
 		@include transform(scale(.3));

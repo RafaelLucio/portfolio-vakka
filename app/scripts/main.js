@@ -73,4 +73,6 @@ $(function () {
 
 	scrollTo($logo, 0);
 	scrollTo($arrowBottom, heightScreen);
+
+	window.scrollTo(0,0);
 });
