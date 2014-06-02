@@ -9,7 +9,7 @@
 	@include transition-duration(.7s);
 }
 .logo, .logo.active {
-	@include transition(all .3s ease 0);
+	transition: all 0.3s ease 0s;
 }
 @include keyframes(balance-bell) {
 	0% {

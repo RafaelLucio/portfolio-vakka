@@ -31,6 +31,7 @@
 
 html body .nicescroll-rails{
 	width: $scroll-width !important;
+	z-index: 3 !important;
 	background: rgba(255, 255, 255, .3) !important;
 	> div {
 		background: rgb(43, 3, 49) !important;

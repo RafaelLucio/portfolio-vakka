@@ -78,9 +78,12 @@
 	}
 }
 .about-article-item-link {
-	color: #771487;
+	color: #555555;
 	font-size: 0.9em;
 	text-decoration: none;
+	&:hover{
+		color: #771487;
+	}
 }
 .about-article-item-title {
 }
