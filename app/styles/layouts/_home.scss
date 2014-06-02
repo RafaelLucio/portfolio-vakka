@@ -58,27 +58,27 @@
 	display: block !important;
 	background: transparent image-url('mosca-right.png') 0 0 no-repeat;
 	&.m1 {
-		margin-top: 170px;
+		margin-top: 220px;
 		margin-left: 20px;
 	}
 	&.m2 {
-		margin-top: 35px;
-		margin-left: 50px;
+		margin-top: 85px;
+		margin-left: 70px;
 	}
 	&.m3 {
-		margin-top: 30px;
+		margin-top: 80px;
 		margin-left: 155px;
 	}
 	&.m4 {
-		margin-top: 50px;
+		margin-top: 80px;
 		margin-left: calc(100% - 130px);
 	}
 	&.m5 {
-		margin-top: 20px;
+		margin-top: 50px;
 		margin-left: calc(100% - 40px);
 	}
 	&.m6 {
-		margin-top: 80px;
+		margin-top: 100px;
 		margin-left: calc(100% - 80px);
 		@include transform(rotate(45deg));
 	}
@@ -92,14 +92,14 @@
 .vakka {
 	width: $widthVakka;
 	height: $heightVakka;
-	margin-top: $heightVakka / 2 * -1;
+	margin-top: $heightVakka / 3 * -1;
 	margin-left: $widthVakka / 2 * -1;
 	background: transparent image-url('vakka.png') 0 0 no-repeat;
 }
 .grama {
 	width: $widthGrama;
 	height: $heightGrama;
-	margin-top: $heightGrama / 2 - 20;
+	margin-top: $heightGrama / 2 + 40;
 	margin-left: $widthGrama / 2 * -1;
 	background: transparent image-url('grama.png') 0 0 no-repeat;
 }
@@ -108,7 +108,7 @@
 	width: $widthPlaca;
 	height: $heightPlaca;
 	margin-left: $widthPlaca + 50;
-	margin-top: $heightPlaca / 2 * -1;
+	margin-top: ($heightPlaca / 2 * -1) + 70;
 	background: transparent image-url('placa.png') 0 0 no-repeat;
 }
 .placa-sombra {
@@ -116,7 +116,7 @@
 	width: $widthPlacaSombra;
 	height: $heightPlacaSombra;
 	margin-left: ($widthPlacaSombra / 2) + 70;
-	margin-top: $heightPlacaSombra - 70;
+	margin-top: $heightPlacaSombra;
 	background: transparent image-url('placa_sombra.png') 0 0 no-repeat;
 	&.active {
 		opacity: 0;
@@ -124,7 +124,7 @@
 }
 .home-text {
 	width: $widthHomeText;
-	margin-top: $heightGrama + 70;
+	margin-top: $heightGrama + 120;
 	margin-left: $widthHomeText / 2 * -1;
 	.text {
 		color: $gray;
