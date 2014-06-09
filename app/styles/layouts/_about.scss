@@ -3,10 +3,14 @@
 // -----------------------------------
 .about{
 	width: 100%;
-	height: 100%;
+	height: 800px;
+	.layers-wrap{
+		@include clearfix();
+		height: 100%;
+	}
 }
 .about-header {
-	top: 0;
+	top: 27%;
 	left: 50%;
 	position: absolute;
 	@include transform(translateX(-50%));
@@ -24,8 +28,7 @@
 	display: block;
 	margin: 0 auto;
 	position: relative;
-	// margin-top: 50%;
-	@include transform(translateY(30%));
+	@include transform(translateY(70%));
 }
 .about-article-item {
 	float: left;
@@ -38,7 +41,7 @@
 	}
 }
 .item-content {
-	width: 80%;
+	width: 60%;
 	margin: 0 auto;
 	p {
 		color: $gray;

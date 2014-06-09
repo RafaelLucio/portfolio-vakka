@@ -66,13 +66,14 @@ html, body {
 .logo {
 	top: 0;
 	left: 0;
-	z-index: 10;
+	z-index: 5;
 	width: 100%;
 	display: block;
 	position: fixed;
 	height: $heightLogo;
 	@include transform(scale(.9));
 	&.active {
+		z-index: 10;
 		margin-top: ($heightLogo / 2 * -1) + 60;
 		@include transform(scale(.3));
 		&.inside-about {
