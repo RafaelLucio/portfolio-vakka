@@ -28,10 +28,9 @@
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
-
-html body .nicescroll-rails{
+html body .nicescroll-rails {
 	width: $scroll-width !important;
-	z-index: 3 !important;
+	z-index: 99 !important;
 	background: rgba(255, 255, 255, .3) !important;
 	> div {
 		background: rgb(43, 3, 49) !important;
@@ -50,28 +49,79 @@ html, body {
 	color: $black;
 	background-color: $body-bg;
 }
-.overlay {
+//
+// Logo
+// -----------------------------------
+.bg{
+	top: 0;
 	left: 0;
+	z-index: 5;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	.content-step-img {
+		@include transform(translateY(50%));
+	}
+}
+.logo {
+	top: 0;
+	left: 0;
+	z-index: 10;
+	width: 100%;
+	display: block;
+	position: fixed;
+	height: $heightLogo;
+	@include transform(scale(.9));
+	&.active {
+		margin-top: ($heightLogo / 2 * -1) + 60;
+		@include transform(scale(.3));
+		&.inside-about {
+			margin-top: -55px;
+		}
+	}
+}
+.sections-page {
+	width: 100%;
+	height: auto;
+	z-index: 7;
+	position: absolute;
+}
+.sections-page-layers {
+	width: 100%;
+	height: auto;
+	position: relative;
+	margin: 25px 0;
+}
+.layers-wrap{
+	width: 90%;
+	margin: 0 auto;
+}
+.overlay {
+	top: 0;
+	left: 0;
+	z-index: -1;
 	width: 100%;
 	height: 100%;
 	display: block;
 	position: absolute;
-	background-color: rgba(255, 255, 255, .6);
+	background-color: rgba(180, 180, 180, .6);
 }
-.figure-content{
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	position: fixed;
-	&.bg{
-		z-index: 0;
-		.content-step-img{
-			@include transform(translateY(50%));
+.content{
+	&.pepsi{
+		.content-step{
+			margin-top: 0;
+		}
+	}
+	&.mercedes{
+		.content-step{
+			margin-bottom: 0;
 		}
 	}
 }
-.content-step-img{
+.content-step{
+	margin: 100px 0;
+}
+.content-step-img {
 	display: block;
 	margin: 0 auto;
 	max-width: 100%;

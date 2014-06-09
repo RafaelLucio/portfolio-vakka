@@ -2,18 +2,5 @@
 // Jobs
 // ----------------------------------------------
 .jobs {
-	top: 0;
-	width: 90%;
-	margin: 0 auto;
-	position: relative;
-	.content.pepsi {
-		.content-step:first-child {
-			margin-top: 100px;
-		}
-	}
-	.content-step {
-		display: block;
-		margin: 50px auto;
-		max-width: 100%;
-	}
+	padding: 70px 0;
 }

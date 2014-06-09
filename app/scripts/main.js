@@ -11,7 +11,7 @@ $(function () {
 		documentHeight = $(document).height(),
 		$homeId = $('#home'),
 		$logo = $('.logo'),
-		$jobs = $('.jobs'),
+		$about = $('.about'),
 		$navigation = $('.navigation'),
 		$placaSombra = $('.placa-sombra'),
 		$arrowBottom = $('.arrow-bottom');
@@ -27,8 +27,6 @@ $(function () {
 			verticalScrolling: $homeId
 		});
 	}
-
-	$jobs.css({marginTop: heightScreen+100});
 
 	$(window).scroll(function () {
 		heightScreen = $(window).height();
@@ -74,5 +72,5 @@ $(function () {
 	scrollTo($logo, 0);
 	scrollTo($arrowBottom, heightScreen);
 
-	window.scrollTo(0,0);
+	window.scrollTo(0, 0);
 });
