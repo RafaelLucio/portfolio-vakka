@@ -48,10 +48,10 @@ $(function () {
 			$placaSombra.removeClass('active');
 		}
 
-		if ($(this).scrollTop() > heightScreen - 50) {
+		if ($(this).scrollTop() > heightScreen - 170) {
 			$logo.addClass('active');
 		}
-		if ($(this).scrollTop() < heightScreen - 50) {
+		if ($(this).scrollTop() < heightScreen - 170) {
 			$logo.removeClass('active');
 		}
 	});

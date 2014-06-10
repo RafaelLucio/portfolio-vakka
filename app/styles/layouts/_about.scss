@@ -3,7 +3,7 @@
 // -----------------------------------
 .about{
 	width: 100%;
-	height: 800px;
+	height: 100%;
 	.layers-wrap{
 		@include clearfix();
 		height: 100%;
@@ -38,6 +38,9 @@
 	&:first-child {
 		padding-top: 45px;
 		border-right: 1px solid #ccc;
+		.item-content{
+			width: 270px;
+		}
 	}
 }
 .item-content {
