@@ -52,7 +52,7 @@ html, body {
 //
 // Logo
 // -----------------------------------
-.bg{
+.bg {
 	top: 0;
 	left: 0;
 	z-index: 5;
@@ -93,7 +93,7 @@ html, body {
 	position: relative;
 	margin: 25px 0;
 }
-.layers-wrap{
+.layers-wrap {
 	width: 90%;
 	margin: 0 auto;
 }
@@ -107,19 +107,19 @@ html, body {
 	position: absolute;
 	background-color: rgba(180, 180, 180, .6);
 }
-.content{
-	&.pepsi{
-		.content-step{
+.content {
+	&.pepsi {
+		.content-step {
 			margin-top: 0;
 		}
 	}
-	&.mercedes{
-		.content-step{
+	&.mercedes {
+		.content-step {
 			margin-bottom: 0;
 		}
 	}
 }
-.content-step{
+.content-step {
 	margin: 100px 0;
 }
 .content-step-img {
@@ -127,37 +127,58 @@ html, body {
 	margin: 0 auto;
 	max-width: 100%;
 }
-.load-content{
+.load-content {
 	top: 0;
 	left: 0;
-	z-index: 99;
+	z-index: 999;
 	width: 100%;
 	height: 100%;
 	background: #fff;
 	position: absolute;
-	.logo{
-		top: 50%;
+	.logo {
+		top: 10%;
 		left: 50%;
 		width: 295px;
 		height: 295px;
 		position: absolute;
-		@include transform(translateX(-50%) translateY(-70%));
+		@include transform(scale(.9) translateX(-54%));
 	}
-	.progress-content{
+	.progress-content {
 		top: 50%;
 		left: 50%;
-		width: 295px;
-		height: 15px;
+		width: 200px;
+		height: 7px;
 		position: absolute;
-		border-radius: 15px;
-		border: 1px solid rgb(63, 23, 69);
+		border-radius: 7px;
+		box-shadow: 0px 0px 3px rgb(63, 23, 69);
 		@include transform(translateX(-50%) translateY(80px));
+		&:before {
+			content: '';
+			top: -40px;
+			right: 50px;
+			width: 20px;
+			height: 20px;
+			position: absolute;
+			background: transparent image-url('mosca-right.png') 0 0 no-repeat;
+		}
 		> span {
 			height: 100%;
 			display: block;
 			max-width: 100%;
-			border-radius: 15px;
-			background: rgb(43, 3, 49);
+			border-radius: 7px;
+			background: rgb(83, 43, 89);
 		}
+	}
+	.progress-content-text {
+		top: 65%;
+		left: 50%;
+		width: 77px;
+		font-size: 2.5em;
+		position: absolute;
+		color: rgb(43, 3, 49);
+		@include transform(translateX(-50%));
+	}
+	.progress{
+		width: 0;
 	}
 }

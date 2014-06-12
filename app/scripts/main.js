@@ -9,6 +9,7 @@ $(function () {
 	var heightScreen = $(window).height(),
 		widthScreen = $(window).width(),
 		documentHeight = $(document).height(),
+		$progress = $('.progress'),
 		$homeId = $('#home'),
 		$logo = $('.logo'),
 		$about = $('.about'),
@@ -73,4 +74,25 @@ $(function () {
 	scrollTo($arrowBottom, heightScreen);
 
 	window.scrollTo(0, 0);
+
+	var count = 0;
+	var interval = null;
+
+	function increment() {
+		interval = setInterval(changeProgress, 10);
+	};
+	increment();
+
+	function changeProgress(){
+		if (count > 100) {
+			clearInterval(interval);
+			return;
+		}
+		count = count+1;
+		$progress.css('width', count + '%');
+	}
+
+	var timeout = setTimeout(function () {
+		$progress.parents('.load-content').fadeOut(1500);
+	}, 2000);
 });
