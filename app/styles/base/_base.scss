@@ -49,9 +49,6 @@ html, body {
 	color: $black;
 	background-color: $body-bg;
 }
-//
-// Logo
-// -----------------------------------
 .bg {
 	top: 0;
 	left: 0;
@@ -63,21 +60,27 @@ html, body {
 		@include transform(translateY(50%));
 	}
 }
+//
+// Logo
+// -----------------------------------
 .logo {
-	top: 0;
-	left: 0;
+	top: 50%;
+	left: 50%;
 	z-index: 5;
-	width: 100%;
+	width: $widthLogo;
+	height: $heightLogo;
 	display: block;
 	position: fixed;
-	height: $heightLogo;
-	@include transform(scale(.9));
+	margin-top: -240px;
+	@include transform(scale(.9) translateX(-55%) translateY(-50%));
 	&.active {
+		top: 50%;
+		width: $widthLogo / 2.5;
+		height: $heightLogo / 2.5;
 		z-index: 10;
-		margin-top: ($heightLogo / 2 * -1) + 60;
-		@include transform(scale(.3));
+		margin-top: -320px;
 		&.inside-about {
-			margin-top: -55px;
+			margin-top: -320px;
 		}
 	}
 }
@@ -135,18 +138,10 @@ html, body {
 	height: 100%;
 	background: #fff;
 	position: absolute;
-	.logo {
-		top: 10%;
-		left: 50%;
-		width: 295px;
-		height: 295px;
-		position: absolute;
-		@include transform(scale(.9) translateX(-54%));
-	}
 	.progress-content {
 		top: 50%;
 		left: 50%;
-		width: 200px;
+		width: $widthLogo / 1.5;
 		height: 7px;
 		position: absolute;
 		border-radius: 7px;

@@ -167,28 +167,22 @@
 // 	}
 // }
 /* Portrait tablet to landscape and desktop */
-@media only screen and (min-width: 769px) and (max-width: 980px) {
-	html body .logo{
-		@include transform(scale(.8));
-		&.active.inside-about{
-			top: -45px;
-		}
-	}
-	.home{
-		.content-moscas{}
-		.fig-home{
-			&.placa , &.placa-sombra{
-				display: none !important;
-			}
-		}
-	}
-}
+// @media only screen and (min-width: 769px) and (max-width: 980px) {
+// 	html body .logo{
+// 		@include transform(scale(.8));
+// 		&.active.inside-about{
+// 			top: -45px;
+// 		}
+// 	}
+// 	.home{
+// 		.content-moscas{}
+// 		.fig-home{
+// 			&.placa , &.placa-sombra{
+// 				display: none !important;
+// 			}
+// 		}
+// 	}
+// }
 @media only screen and (max-height: 800px) {
-	.logo{
-		@include transform(scale(.7));
-		margin-top: -55px;
-		&.active.inside-about{
-			top: -45px;
-		}
-	}
+	
 }
