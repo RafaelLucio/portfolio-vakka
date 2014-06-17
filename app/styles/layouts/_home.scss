@@ -2,9 +2,10 @@
 // Home
 // -----------------------------------
 #home{
-	width: 100%;
-	height: 100%;
 	margin: 0;
+	height: 100%;
+	z-index: 10;
+	position: absolute;
 }
 .content-home{
 	width: 100%;
@@ -26,7 +27,7 @@
 	width: 20px;
 	height: 20px;
 	position: absolute;
-	display: block;
+	display: block !important;
 	background: transparent image-url('mosca-right.png') 0 0 no-repeat;
 	&.m1 {
 		margin-top: 220px;
@@ -58,7 +59,7 @@
 	top: 50%;
 	left: 50%;
 	position: absolute;
-	display: block;
+	display: block !important;
 }
 .vakka {
 	width: $widthVakka;

@@ -167,22 +167,36 @@
 // 	}
 // }
 /* Portrait tablet to landscape and desktop */
-// @media only screen and (min-width: 769px) and (max-width: 980px) {
-// 	html body .logo{
-// 		@include transform(scale(.8));
-// 		&.active.inside-about{
-// 			top: -45px;
-// 		}
-// 	}
-// 	.home{
-// 		.content-moscas{}
-// 		.fig-home{
-// 			&.placa , &.placa-sombra{
-// 				display: none !important;
-// 			}
-// 		}
-// 	}
-// }
+@media only screen and (min-width: 769px) and (max-width: 980px) {
+	.home{
+		.content-moscas{
+			margin-top: ($heightVakka + 140) / 2 * -1;
+		}
+		.fig-home{
+			&.placa , &.placa-sombra{
+				display: none !important;
+			}
+		}
+	}
+}
 @media only screen and (max-height: 800px) {
-	
+	.logo{
+		width: $widthLogo - 50;
+		height: $heightLogo - 50;
+		margin-top: -210px;
+		&.active {
+			margin-top: -280px;
+			&.inside-about {
+				margin-top: -280px;
+			}
+		}
+	}
+	.home{
+		.vakka {
+			margin-top: ($heightVakka / 2 - 20) * -1;
+		}
+	}
+	.content-home {
+		@include transform(scale(0.9));
+	}
 }
