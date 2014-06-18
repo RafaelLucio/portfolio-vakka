@@ -3,8 +3,9 @@
 // -----------------------------------
 #home{
 	margin: 0;
-	height: 100%;
 	z-index: 10;
+	height: 100%;
+	overflow: hidden;
 	position: absolute;
 }
 .content-home{

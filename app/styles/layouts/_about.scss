@@ -12,6 +12,8 @@
 .about-header {
 	top: 27%;
 	left: 50%;
+	width: 95%;
+	text-align: center;
 	position: absolute;
 	@include transform(translateX(-50%));
 }

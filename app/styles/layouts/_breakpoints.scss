@@ -1,197 +1,130 @@
-// // 
-// // Breackpoints
-// // -----------------------------------
-
-// /* Smartphones (portrait) ----------- */
-// @media only screen and (max-width : 320px){
-// 	html body .logo{
-// 		@include transform(scale(.7));
-// 		&.active.inside-about{
-// 			top: -45px;
-// 		}
-// 	}
-// 	.home{
-// 		.content-moscas{
-// 			display: none;
-// 		}
-// 		.fig-home{
-// 			&.placa , &.placa-sombra, &.home-text, &.arrow-bottom{
-// 				display: none !important;
-// 			}
-// 			&.vakka{
-// 				top: auto !important;
-// 				bottom: 40px !important;
-// 				margin-left: ($widthVakka * -1) + 130;
-// 			}
-// 			&.grama{
-// 				top: auto !important;
-// 				bottom: -30px !important;
-// 			}
-// 		}
-// 	}
-// 	#about{
-// 		height: 850px;
-// 		.about-article{
-// 			width: 100%;
-// 			margin-top: -180px;
-// 			margin-left: calc(50% - 100%);
-// 			.about-header{
-// 				left: 20px;
-// 				margin-left: 0;
-// 			}
-// 		}
-// 		.about-article-content{
-// 			width: 420px;
-// 		}
-// 		.about-article-item{
-// 			width: 100%;
-// 			&:first-child{
-// 				padding-top: 40px;
-// 				height: 260px;
-// 				border: 0;
-// 			}
-// 			.item-content{
-// 				width: 90%;
-// 				p{
-// 					font-size: 1.3em;
-// 				}
-// 			}
-// 		}
-// 		.about-article-item-email{
-// 			.IN-widget{
-// 				display: block !important;
-// 			}
-// 		}
-// 	}
-// }
-// /* Smartphones (portrait) ----------- */
-// @media only screen and (min-width : 321px) and (max-width : 480px){
-// 	html body .logo{
-// 		@include transform(scale(.7));
-// 		&.active.inside-about{
-// 			top: -45px;
-// 		}
-// 	}
-// 	.home{
-// 		.content-moscas{
-// 			display: none;
-// 		}
-// 		.fig-home{
-// 			&.placa , &.placa-sombra, &.home-text, &.arrow-bottom{
-// 				display: none !important;
-// 			}
-// 			&.vakka{
-// 				top: auto !important;
-// 				bottom: 40px !important;
-// 				margin-left: ($widthVakka * -1) + 130;
-// 			}
-// 			&.grama{
-// 				top: auto !important;
-// 				bottom: -30px !important;
-// 			}
-// 		}
-// 	}
-// 	#about{
-// 		height: 850px;
-// 		.about-article{
-// 			width: 100%;
-// 			margin-top: -180px;
-// 			margin-left: calc(50% - 100%);
-// 			.about-header{
-// 				left: 20px;
-// 				margin-left: 0;
-// 			}
-// 		}
-// 		.about-article-content{
-// 			width: 420px;
-// 		}
-// 		.about-article-item{
-// 			width: 100%;
-// 			&:first-child{
-// 				padding-top: 40px;
-// 				height: 260px;
-// 				border: 0;
-// 			}
-// 			.item-content{
-// 				width: 90%;
-// 				p{
-// 					font-size: 1.3em;
-// 				}
-// 			}
-// 		}
-// 		.about-article-item-email{
-// 			.IN-widget{
-// 				display: block !important;
-// 			}
-// 		}
-// 	}
-// }
-// /* Smartphones (portrait) ----------- */
-// @media only screen and (min-width : 481px) and (max-width : 768px){
-// 	html body .logo{
-// 		@include transform(scale(.7));
-// 		&.active.inside-about{
-// 			top: -45px;
-// 		}
-// 	}
-// 	.home{
-// 		.content-moscas{
-// 			@include transform(scale(.9));
-// 		}
-// 		.fig-home{
-// 			&.placa , &.placa-sombra{
-// 				display: none !important;
-// 			}
-// 			&.vakka{
-// 				@include transform(scale(.9));
-// 			}
-// 		}
-// 	}
-// 	#about{
-// 		height: 950px;
-// 		.about-article{
-// 			width: 100%;
-// 			margin-left: calc(50% - 100%);
-// 		}
-// 		.about-article-content{
-// 			width: 420px;
-// 		}
-// 		.about-article-item{
-// 			width: 100%;
-// 			&:first-child{
-// 				padding-top: 40px;
-// 				height: 260px;
-// 				border: 0;
-// 			}
-// 		}
-// 	}
-// }
-/* Portrait tablet to landscape and desktop */
-@media only screen and (min-width: 769px) and (max-width: 980px) {
-	.home{
-		.content-moscas{
+//
+// Breackpoints
+// -----------------------------------
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 480px){
+	html body .logo {
+		width: $widthLogo - 100;
+		height: $heightLogo - 100;
+		margin-top: -50px;
+		&.active {
+			width: $widthLogo / 3;
+			height: $heightLogo / 3;
+			margin-top: -180px;
+			&.inside-about {
+				margin-top: -260px;
+			}
+		}
+	}
+	.home {
+		.content-moscas {
+			top: auto;
+			bottom: 20px;
+			margin-top: 210px;
+			margin-left: -495px;
+		}
+		.fig-home {
+			&.placa, &.placa-sombra, &.home-text, &.arrow-bottom {
+				display: none !important;
+			}
+			&.vakka{
+				top: auto !important;
+				bottom: 20px;
+				margin-left: -470px;
+			}
+			&.grama{
+				top: auto !important;
+				bottom: -38px;
+			}
+		}
+	}
+	.about {
+		.about-header{
+			top: 12%;
+		}
+		.about-article-content{
+			@include transform(translateY(20%));
+		}
+		.about-article-item{
+			width: 100%;
+			height: 300px;
+			float: none;
+			&:first-child{
+				border: 0;
+				.item-content{
+					float: none;
+					margin: 0 auto;
+				}
+			}
+		}
+		.item-content{
+			width: 270px;
+		}
+	}
+}
+/* Smartphones (portrait) ----------- */
+@media only screen and (min-width:481px) and (max-width:768px) {
+	.home {
+		.content-moscas {
 			margin-top: ($heightVakka + 140) / 2 * -1;
 		}
-		.fig-home{
-			&.placa , &.placa-sombra{
+		.fig-home {
+			&.placa, &.placa-sombra {
+				display: none !important;
+			}
+		}
+	}
+	.about {
+		.about-header{
+			top: 12%;
+		}
+		.about-article-content{
+			@include transform(translateY(20%));
+		}
+		.about-article-item{
+			width: 100%;
+			height: 300px;
+			float: none;
+			&:first-child{
+				border: 0;
+				.item-content{
+					float: none;
+					margin: 0 auto;
+				}
+			}
+		}
+		.item-content{
+			width: 270px;
+		}
+	}
+}
+
+/* Portrait tablet to landscape and desktop */
+@media only screen and (min-width:769px) and (max-width:980px) {
+	.home {
+		.content-moscas {
+			margin-top: ($heightVakka + 140) / 2 * -1;
+		}
+		.fig-home {
+			&.placa, &.placa-sombra {
 				display: none !important;
 			}
 		}
 	}
 }
-@media only screen and (max-height: 800px) {
-	.logo{
+@media only screen and (max-height:800px) {
+	.logo {
 		width: $widthLogo - 50;
 		height: $heightLogo - 50;
 		margin-top: -210px;
 		&.active {
-			margin-top: -280px;
+			margin-top: -260px;
 			&.inside-about {
-				margin-top: -280px;
+				margin-top: -260px;
 			}
 		}
 	}
-	.home{
+	.home {
 		.vakka {
 			margin-top: ($heightVakka / 2 - 20) * -1;
 		}
