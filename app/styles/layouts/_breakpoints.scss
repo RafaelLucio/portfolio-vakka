@@ -3,6 +3,12 @@
 // -----------------------------------
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width : 480px){
+	.error-404 {
+		.fig-home.vakka {
+			width: calc(805px / 2.4);
+			height: (392px / 2.4);
+		}
+	}
 	html body .logo {
 		width: $widthLogo - 100;
 		height: $heightLogo - 100;
@@ -64,6 +70,12 @@
 }
 /* Smartphones (portrait) ----------- */
 @media only screen and (min-width:481px) and (max-width:768px) {
+	.error-404 {
+		.fig-home.vakka {
+			width: calc(805px / 1.5);
+			height: (392px / 1.5);
+		}
+	}
 	.home {
 		.content-moscas {
 			margin-top: ($heightVakka + 140) / 2 * -1;

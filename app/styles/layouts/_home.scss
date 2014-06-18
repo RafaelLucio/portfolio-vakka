@@ -2,6 +2,7 @@
 // Home
 // -----------------------------------
 #home{
+	top: 0;
 	margin: 0;
 	z-index: 10;
 	height: 100%;
@@ -65,14 +66,14 @@
 .vakka {
 	width: $widthVakka;
 	height: $heightVakka;
-	margin-top: $heightVakka / 3 * -1;
+	margin-top: ($heightVakka / 3 * -1) + 20;
 	margin-left: $widthVakka / 2 * -1;
 	background: transparent image-url('vakka.png') 0 0 no-repeat;
 }
 .grama {
 	width: $widthGrama;
 	height: $heightGrama;
-	margin-top: $heightGrama / 2 + 40;
+	margin-top: $heightGrama / 2 + 60;
 	margin-left: $widthGrama / 2 * -1;
 	background: transparent image-url('grama.png') 0 0 no-repeat;
 }
