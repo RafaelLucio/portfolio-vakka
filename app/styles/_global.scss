@@ -1,0 +1,49 @@
+/* *
+* Globals and Global Classes
+*
+* @author Rafael Antonio Lucio <rafaelantoniolucio@gmail.com>
+* */
+
+/* _____ GLOBALS _____ */
+html,
+body {
+    font-family: $font-amaticsc;
+    font-size: 1.125em;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+
+/* _____ HIDE CLASSES _____ */
+.hide-mobile {
+    @media (max-width: $mobile) {
+        display: none;
+    }
+}
+
+.hide-tablet-small {
+    @media (min-width: $tablet-small + 0.5em) {
+        display: none;
+    }
+}
+
+.hide-tablet {
+    @media (min-width: $tablet) {
+        display: none;
+    }
+}
+
+.hide-laptop {
+    @media (min-width: $laptop) {
+        display: none;
+    }
+}
+
+.hide-desktop {
+    @media (min-width: $desktop) {
+        display: none;
+    }
+}

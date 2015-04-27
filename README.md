@@ -1,4 +1,0 @@
-Portfolio-vakka
-===============
-
-Portfolio Vakka

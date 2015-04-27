@@ -1,0 +1,36 @@
+/* *
+* Home Stylesheet
+*
+* @author Rafael Antonio Lucio <rafaelantoniolucio@gmail.com>
+* */
+
+/* _____ HOME _____ */
+.thvk-main {
+    width: 90%;
+    margin: 0 5% 0 5%;
+}
+
+.thvk-logo {
+    top: 0;
+    left: 0;
+    margin-left: 0;
+    display: block;
+    position: fixed;
+}
+
+.thvk-title {
+    font-family: $font-amaticsc;
+    font-weight: normal;
+}
+
+.thvk-home {
+    text-align: center;
+}
+
+@media (min-width: 276px) {
+    .thvk-logo {
+        left: 50%;
+        margin-left: -138px;
+        max-width: 276px;
+    }
+}

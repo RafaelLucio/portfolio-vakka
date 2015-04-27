@@ -1,34 +1,25 @@
-/**
- *    Portfolio Vakka
- *
- *    @author Rafael Antonio Lucio <rafaelantoniolucio@gmail.com>
- */
+/* *
+* Main include stylesheet components
+*
+* @author Rafael Antonio Lucio <rafaelantoniolucio@gmail.com>
+* */
 
-/* Reset */
-@import "compass/reset";
+/* _____ MAIN _____ */
 
-/* Compass CSS3 */
-@import "compass/css3";
-@import "compass/css3/font-face";
-
-/* Fonts */
-@import "fonts/fontface";
-
-/* Base */
-@import "base/variables";
-@import "base/base";
-@import "base/mixins";
-
-/* Animations */
-@import "animations/animations";
-
-/* Components */
+@import "variables";
+@import "mixins";
+@import "fontface";
 
 
-/* Layouts */
-@import "layouts/breakpoints";
-@import "layouts/navigation";
-@import "layouts/home";
-@import "layouts/jobs";
-@import "layouts/about";
-@import "layouts/error";
+
+
+
+/* _____ COMPONENTS _____ */
+@import "global";
+
+
+
+
+
+/* _____ LAYOUTS _____ */
+@import "home";
