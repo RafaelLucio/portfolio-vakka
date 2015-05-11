@@ -71,6 +71,9 @@ img {
   max-width: 100%; }
 
 /* _____ HIDE CLASSES _____ */
+.hide {
+  display: none; }
+
 @media (max-width: 37.5em) {
   .hide-mobile {
     display: none; } }
@@ -90,6 +93,10 @@ img {
 @media (min-width: 70em) {
   .hide-desktop {
     display: none; } }
+
+/* _____ SHOW CLASSES _____ */
+.show {
+  display: block; }
 
 /* _____ LAYOUTS _____ */
 /* *

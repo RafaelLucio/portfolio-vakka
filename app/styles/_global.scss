@@ -18,6 +18,10 @@ img {
 
 
 /* _____ HIDE CLASSES _____ */
+.hide {
+    display: none;
+}
+
 .hide-mobile {
     @media (max-width: $mobile) {
         display: none;
@@ -46,4 +50,9 @@ img {
     @media (min-width: $desktop) {
         display: none;
     }
+}
+
+/* _____ SHOW CLASSES _____ */
+.show {
+    display: block;
 }
