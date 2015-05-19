@@ -16,11 +16,11 @@
 @mixin importFont($fontname, $filename, $svgLabel, $isBold: false, $isItalic: false) {
 	@font-face {
 		font-family: $fontname;
-		src: url('/app/fonts/#{$filename}.eot');
-		src: url('/app/fonts/#{$filename}.eot?#iefix') format('embedded-opentype'),
-		url('/app/fonts/#{$filename}.woff') format('woff'),
-		url('/app/fonts/#{$filename}.ttf') format('truetype'),
-		url('/app/fonts/#{$filename}.svg##{$svgLabel}') format('svg');
+		src: url('/fonts/#{$filename}.eot');
+		src: url('/fonts/#{$filename}.eot?#iefix') format('embedded-opentype'),
+		url('/fonts/#{$filename}.woff') format('woff'),
+		url('/fonts/#{$filename}.ttf') format('truetype'),
+		url('/fonts/#{$filename}.svg##{$svgLabel}') format('svg');
 		@if $isBold {
 			font-weight: bold;
 		} @else {

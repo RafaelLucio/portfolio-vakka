@@ -1,0 +1,46 @@
+/* *
+* Navigations of projects
+*
+* @author Rafael Antonio Lucio <rafaelantoniolucio@gmail.com>
+* */
+
+/* _____ NAVIGATION _____ */
+
+
+
+
+// Navigation Work List
+// ==========================================================================
+.thvk-nav {
+	top: 1em;
+	right: 0;
+	position: fixed;
+	padding-left: 15px;
+	&:before {
+		content: '';
+		left: 0;
+		top: -5px;
+		width: 19px;
+		height: 19px;
+		position: absolute;
+		background: url('../images/mosca-right.png') 0 0 no-repeat;
+	}
+	.thvk-link {
+		font-size: 1.8em;
+	}
+}
+
+
+
+
+
+// Navigation Work List
+// ==========================================================================
+.thvk-work-list {
+	li {
+		margin: 5em 0;
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+}
