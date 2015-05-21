@@ -64,6 +64,64 @@
 }
 /* _____ COMPONENTS _____ */
 /* *
+* Animations Stylesheet
+*
+* @author Rafael Antonio Lucio <rafaelantoniolucio@gmail.com>
+* */
+/* _____ ANIMATIONS _____ */
+@-webkit-keyframes balanceArrow {
+  0% {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  20% {
+    -webkit-transform: rotate(70deg);
+            transform: rotate(70deg);
+  }
+  40% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  60% {
+    -webkit-transform: rotate(70deg);
+            transform: rotate(70deg);
+  }
+  80% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  100% {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+}
+@keyframes balanceArrow {
+  0% {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  20% {
+    -webkit-transform: rotate(70deg);
+            transform: rotate(70deg);
+  }
+  40% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  60% {
+    -webkit-transform: rotate(70deg);
+            transform: rotate(70deg);
+  }
+  80% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  100% {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+}
+/* *
 * Globals and Global Classes
 *
 * @author Rafael Antonio Lucio <rafaelantoniolucio@gmail.com>
@@ -84,7 +142,7 @@ body {
   font-family: "amaticsc_scregular", "Arial", sans-serif;
 }
 
-img {
+img, iframe {
   max-width: 100%;
   display: block;
   margin: 0 auto;
@@ -209,9 +267,8 @@ ul {
 * */
 /* _____ HOME _____ */
 .thvk-main {
-  width: 90%;
+  width: 100%;
   height: 100%;
-  margin: 0 5% 0 5%;
 }
 
 .thvk-logo {
@@ -234,7 +291,72 @@ ul {
 .thvk-home {
   width: 100%;
   height: 100%;
+  margin-bottom: 5em;
   position: relative;
+}
+
+.thvk-arrow {
+  width: 30px;
+  height: 30px;
+  display: block;
+  cursor: pointer;
+  left: 50%;
+  bottom: 1em;
+  margin-left: -15px;
+  position: absolute;
+  border-right: 1px solid #555;
+  border-bottom: 1px solid #555;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.thvk-arrow:hover {
+  animation: balanceArrow 1s ease;
+  /* Firefox: */
+  -moz-animation: balanceArrow 1s ease;
+  /* Safari and Chrome: */
+  -webkit-animation: balanceArrow 1s ease;
+  /* Opera: */
+  -o-animation: balanceArrow 1s ease;
+}
+@media (max-width: 37.5em) {
+  .thvk-arrow {
+    display: none;
+  }
+}
+
+.thvk-content-images {
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.thvk-vaca, .thvk-grama, .thvk-moscas {
+  max-width: none;
+  position: absolute;
+}
+
+.thvk-vaca {
+  left: 0;
+  bottom: 30px;
+  -webkit-transform: translate3d(-50%, 0, 0);
+          transform: translate3d(-50%, 0, 0);
+}
+
+.thvk-grama {
+  left: 0;
+  bottom: -35px;
+  -webkit-transform: translate3d(-50%, 0, 0);
+          transform: translate3d(-50%, 0, 0);
+}
+
+.thvk-moscas {
+  left: 0;
+  bottom: 160px;
+  -webkit-transform: translate3d(-45%, 0, 0);
+          transform: translate3d(-45%, 0, 0);
 }
 
 @media (min-width: 276px) {

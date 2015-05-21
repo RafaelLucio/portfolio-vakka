@@ -40,14 +40,14 @@
 
 // ANIMATIONS
 // ==========================================================================
-@mixin animations($name, $duration){
-	animation: $name $duration;
+@mixin animations($name, $duration, $function: ease){
+	animation: $name $duration $function;
 	/* Firefox: */
-	-moz-animation: $name $duration;
+	-moz-animation: $name $duration $function;
 	/* Safari and Chrome: */
-	-webkit-animation: $name $duration;
+	-webkit-animation: $name $duration $function;
 	/* Opera: */
-	-o-animation: $name $duration;
+	-o-animation: $name $duration $function;
 }
 
 
